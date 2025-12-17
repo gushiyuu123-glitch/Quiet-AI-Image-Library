@@ -1,4 +1,11 @@
 // ==============================
+// Vercel Web Analytics
+// ==============================
+import { inject } from "@vercel/analytics";
+
+inject();
+
+// ==============================
 // Elements
 // ==============================
 const grid = document.querySelector(".grid");
