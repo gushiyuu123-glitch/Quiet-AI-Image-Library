@@ -261,3 +261,26 @@ footer .credits {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
+.cta-templates {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 6px;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.cta-button:hover {
+  border-color: rgba(255,255,255,0.8);
+  color: white;
+  background: rgba(255,255,255,0.08);
+}
