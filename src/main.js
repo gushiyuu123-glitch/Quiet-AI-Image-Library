@@ -5,6 +5,7 @@ const grid = document.querySelector(".grid");
 const images = Array.from(document.querySelectorAll(".grid img"));
 const filterButtons = document.querySelectorAll(".filters button");
 const zipBtn = document.getElementById("zip-download");
+
 // ==============================
 // SEO Titles (Category based)
 // ==============================
@@ -28,6 +29,9 @@ function updateTitle(filter) {
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
+
+const isMobile = () =>
+  /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
 // ==============================
 // Filter logic
@@ -53,9 +57,8 @@ function applyFilter(filter) {
         ? "block"
         : "none";
   });
-  // ✅ SEO title update
+
   updateTitle(filter);
-  // scrollToTop(); ← 削除
 }
 
 // ==============================
@@ -90,7 +93,7 @@ const imgId = params.get("img");
 if (imgId) openSingleView(imgId);
 
 // ==============================
-// Single view (OVERLAY方式)
+// Single view (overlay)
 // ==============================
 function openSingleView(id) {
   if (document.querySelector(".single-overlay")) return;
@@ -105,24 +108,45 @@ function openSingleView(id) {
 
     <main class="single">
       <img src="${src}" alt="">
-      <p class="hint">Click image to download.</p>
+      <p class="hint">Tap image to download.</p>
+      <div class="save-toast">長押しで保存できます</div>
     </main>
   `;
 
   document.body.appendChild(overlay);
 
-  // download
-  overlay.querySelector("img").addEventListener("click", () => {
+  overlay.querySelector("img").addEventListener("click", () =>
+    handleImageDownload(src, id)
+  );
+
+  overlay
+    .querySelector(".close-btn")
+    .addEventListener("click", closeSingleView);
+
+  document.addEventListener("keydown", escHandler, { once: true });
+}
+
+// ==============================
+// Download handler（完全版）
+// ==============================
+function handleImageDownload(src, id) {
+  if (isMobile()) {
+    // モバイル → 自動DL不可 → 新タブで開く
+    window.open(src, "_blank");
+
+    // トースト表示
+    const toast = document.querySelector(".save-toast");
+    toast.classList.add("visible");
+    setTimeout(() => toast.classList.remove("visible"), 1600);
+  } else {
+    // PC → 自動ダウンロード可能
     const link = document.createElement("a");
     link.href = src;
     link.download = `${id}.png`;
     link.click();
-  });
-
-  // close
-  overlay.querySelector(".close-btn").addEventListener("click", closeSingleView);
-  document.addEventListener("keydown", escHandler, { once: true });
+  }
 }
+
 // ==============================
 // Close single view
 // ==============================
@@ -130,7 +154,6 @@ function closeSingleView() {
   const overlay = document.querySelector(".single-overlay");
   if (overlay) overlay.remove();
 
-  // トップページ以外だけ URL を戻す
   if (location.pathname !== "/") {
     history.pushState({}, "", "/");
     scrollToTop();
@@ -150,10 +173,12 @@ if (zipBtn) {
     const zip = new JSZip();
 
     const activeFilter =
-      document.querySelector(".filters button.active")?.dataset.filter || "all";
+      document.querySelector(".filters button.active")?.dataset.filter ||
+      "all";
 
-    const targets = images.filter(img =>
-      activeFilter === "all" || img.dataset.category === activeFilter
+    const targets = images.filter(
+      img =>
+        activeFilter === "all" || img.dataset.category === activeFilter
     );
 
     for (const img of targets) {
@@ -169,20 +194,18 @@ if (zipBtn) {
     link.click();
   });
 }
+
 // ==============================
 // Initial & SPA state sync
 // ==============================
 function syncState() {
-  // overlay があれば必ず消す
   const overlay = document.querySelector(".single-overlay");
   if (overlay) overlay.remove();
 
-  // ?img などの query を必ず消す（重要）
   if (location.search) {
     history.replaceState({}, "", location.pathname);
   }
 
-  // 一旦すべて表示
   images.forEach(img => {
     img.style.display = "block";
   });
@@ -191,8 +214,5 @@ function syncState() {
   applyFilter(path || "all");
 }
 
-// 初期実行
 syncState();
-
-// 戻る・進む対応
 window.addEventListener("popstate", syncState);
