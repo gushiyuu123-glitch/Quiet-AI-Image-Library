@@ -3,22 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Verification -->
   <meta name="google-site-verification" content="F8Sue3GXl6puZr3-IUIrIzZHfrbeGVz76HwWEaLTc-Q" />
+
+  <!-- =====================================================
+       Dynamic Canonical（JSで自動書き換え）
+  ====================================================== -->
+  <link id="canonical" rel="canonical" href="" />
 
   <!-- =====================================================
        Primary SEO
   ====================================================== -->
   <title>Free AI Images for Web Design | Minimal & Quiet Stock Library</title>
 
-  <meta
-    name="description"
-    content="Download free AI-generated images for web design, landing pages, startups, and branding. A minimal and quiet stock image library for designers, developers, and creatives."
-  />
+  <meta name="description"
+    content="Download free AI-generated images for web design, landing pages, startups, and branding. A minimal and quiet stock image library for designers, developers, and creatives." />
 
   <meta name="robots" content="index, follow" />
-<link id="canonical" rel="canonical" href="" />
-
-
 
   <!-- =====================================================
        Open Graph / SNS
@@ -26,10 +28,8 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Quiet AI Image Library" />
   <meta property="og:title" content="Free AI Images for Web Design | Quiet AI Image Library" />
-  <meta
-    property="og:description"
-    content="A free AI-generated image library for minimal web design, branding, and modern digital projects."
-  />
+  <meta property="og:description"
+    content="A free AI-generated image library for minimal web design, branding, and modern digital projects." />
   <meta property="og:url" content="https://quiet-ai.gushikendesign.com/" />
   <meta property="og:image" content="https://quiet-ai.gushikendesign.com/ogp.png" />
   <meta property="og:image:width" content="1200" />
@@ -40,33 +40,29 @@
   ====================================================== -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Free AI Images for Web Design" />
-  <meta
-    name="twitter:description"
-    content="Minimal & quiet AI-generated images for web design and branding."
-  />
+  <meta name="twitter:description"
+    content="Minimal & quiet AI-generated images for web design and branding." />
   <meta name="twitter:image" content="https://quiet-ai.gushikendesign.com/ogp.png" />
 
-<!-- Favicon -->
-<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
-<link rel="icon" type="image/png" sizes="64x64" href="/favicon-64x64.png" />
-<link rel="icon" type="image/png" sizes="128x128" href="/favicon-128x128.png" />
-<link rel="icon" type="image/png" sizes="256x256" href="/favicon-256x256.png" />
-
-<!-- Apple Touch Icon -->
-<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-
+  <!-- =====================================================
+       Favicon
+  ====================================================== -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64x64.png" />
+  <link rel="icon" type="image/png" sizes="128x128" href="/favicon-128x128.png" />
+  <link rel="icon" type="image/png" sizes="256x256" href="/favicon-256x256.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
   <!-- =====================================================
        Styles
   ====================================================== -->
   <link rel="stylesheet" href="/src/style.css" />
 
-
   <!-- =====================================================
-       Structured Data (JSON-LD)
+       STRUCTURED DATA (静的: ImageGallery 全体向け)
   ====================================================== -->
   <script type="application/ld+json">
   {
@@ -86,8 +82,8 @@
       "ai stock images",
       "images for web design",
       "minimal stock photos",
-      "branding images",
       "landing page images",
+      "branding images",
       "quiet ai library",
       "minimalist images"
     ]
@@ -96,9 +92,7 @@
 
   <!-- Vercel Web Analytics -->
   <script defer src="/_vercel/insights/script.js"></script>
-
 </head>
-
 
 <body>
 
@@ -109,33 +103,35 @@
     ============================== -->
     <header class="hero">
       <h1>Quiet AI Image Library</h1>
-      <p class="lead">
-        Free AI-generated images for modern web design.
-      </p>
-      <p class="hint">
-        Click any image to download. Shareable URLs & ZIP available.
-      </p>
+      <p class="lead">Free AI-generated images for modern web design.</p>
+      <p class="hint">Click any image to download. Shareable URLs & ZIP available.</p>
     </header>
 
-
-    <!-- SEO Text (Hidden) -->
+    <!-- =============================
+         SEO Text (GLOBAL)
+         ※ 非表示だが Google は読む
+    ============================== -->
     <section class="sr-only">
       <h2>Free AI-generated images for web design and branding</h2>
-
       <p>
         Quiet AI Image Library offers free AI-generated stock images for designers,
         developers, and creatives. All images are suitable for websites, landing pages,
         presentations, and branding projects.
       </p>
-
       <p>
-        Popular use cases include landing pages, portfolios, SaaS websites,
-        minimal brand design, architecture concepts, lighting studies,
-        workspace mockups, and nature-inspired visual identities.
+        Popular categories include architecture, soft natural light, textures,
+        modern workspaces, minimal people scenes, and nature-inspired visuals.
       </p>
     </section>
+
     <!-- =============================
-         Filters / Actions
+         SEO Text (CATEGORY-SPECIFIC)
+         JSで書き換え
+    ============================== -->
+    <section id="seo-category-text" class="sr-only"></section>
+
+    <!-- =============================
+         Filter Buttons
     ============================== -->
     <nav class="filters" aria-label="Image categories">
       <button data-filter="all" class="active" aria-pressed="true">All</button>
@@ -146,50 +142,37 @@
       <button data-filter="workspace">Workspace</button>
       <button data-filter="nature">Nature</button>
 
-      <button id="zip-download" aria-label="Download images as ZIP">
-        Download ZIP
-      </button>
+      <button id="zip-download" aria-label="Download images as ZIP">Download ZIP</button>
     </nav>
-
 
     <!-- =============================
          Image Grid
     ============================== -->
-<section class="grid" aria-label="Image gallery" id="imageGrid"></section>
+    <section class="grid" aria-label="Image gallery" id="imageGrid"></section>
 
   </main>
-
 
   <!-- =============================
        License
   ============================== -->
   <section class="license" aria-label="License information">
-
     <p>
       All images on this site are generated using AI tools.<br />
       You may use them freely for personal and commercial projects.
     </p>
-
-    <p>
-      Redistribution, resale, or inclusion in competing image libraries is not permitted.
-    </p>
-
-    <p>
-      This site is not affiliated with, endorsed by, or officially connected to any AI service providers.
-    </p>
-
+    <p>Redistribution or resale is not permitted.</p>
+    <p>This site is not affiliated with any official AI providers.</p>
   </section>
 
-    <!-- CTA -->
-    <div class="cta-templates">
-      <a
-        href="https://atelierquiet.gushikendesign.com/"
-        class="cta-button"
-        target="_blank"
-        rel="noopener noreferrer">
-        Explore Minimal Templates →
-      </a>
-    </div>
+  <!-- =============================
+       CTA
+  ============================== -->
+  <div class="cta-templates">
+    <a href="https://atelierquiet.gushikendesign.com/" class="cta-button" target="_blank" rel="noopener noreferrer">
+      Explore Minimal Templates →
+    </a>
+  </div>
+
   <!-- =============================
        Footer
   ============================== -->
@@ -202,19 +185,13 @@
 
     <p class="credits">
       Created by
-      <a href="https://gushikendesign.com/" target="_blank" rel="noopener noreferrer">
-        GUSHIKEN DESIGN
-      </a>
-
+      <a href="https://gushikendesign.com/" target="_blank" rel="noopener noreferrer">GUSHIKEN DESIGN</a>
       · <a href="https://atelierquiet.gushikendesign.com/" target="_blank">Minimal Website Templates</a>
-      · <a href="https://www.instagram.com/gushikendesign/" target="_blank" rel="noopener noreferrer">
-        Instagram
-      </a>
+      · <a href="https://www.instagram.com/gushikendesign/" target="_blank" rel="noopener noreferrer">Instagram</a>
     </p>
   </footer>
 
-
-  <!-- Scripts -->
+  <!-- Main Script -->
   <script type="module" src="/src/main.js"></script>
 
 </body>
