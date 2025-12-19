@@ -1,13 +1,35 @@
 // ==============================
+// Load JSON
+// ==============================
+import imagesData from "./images.json";
+
+// ==============================
 // Elements
 // ==============================
-const grid = document.querySelector(".grid");
-const images = Array.from(document.querySelectorAll(".grid img"));
+const grid = document.getElementById("imageGrid");
 const filterButtons = document.querySelectorAll(".filters button");
 const zipBtn = document.getElementById("zip-download");
 
 // ==============================
-// SEO Titles (Category based)
+// Insert images dynamically
+// ==============================
+grid.innerHTML = imagesData
+  .map(
+    img => `
+      <img 
+        src="${img.src}" 
+        data-id="${img.id}" 
+        data-category="${img.category}" 
+        alt="${img.alt}"
+      />
+    `
+  )
+  .join("");
+
+const images = Array.from(document.querySelectorAll(".grid img"));
+
+// ==============================
+// SEO Titles
 // ==============================
 const seoTitles = {
   architecture: "Minimal Architecture Images for Web Design | Free AI Stock",
@@ -93,7 +115,7 @@ const imgId = params.get("img");
 if (imgId) openSingleView(imgId);
 
 // ==============================
-// Single view (overlay)
+// Single view
 // ==============================
 function openSingleView(id) {
   if (document.querySelector(".single-overlay")) return;
@@ -127,19 +149,16 @@ function openSingleView(id) {
 }
 
 // ==============================
-// Download handler（完全版）
+// Download handler
 // ==============================
 function handleImageDownload(src, id) {
   if (isMobile()) {
-    // モバイル → 自動DL不可 → 新タブで開く
     window.open(src, "_blank");
 
-    // トースト表示
     const toast = document.querySelector(".save-toast");
     toast.classList.add("visible");
     setTimeout(() => toast.classList.remove("visible"), 1600);
   } else {
-    // PC → 自動ダウンロード可能
     const link = document.createElement("a");
     link.href = src;
     link.download = `${id}.png`;
@@ -148,7 +167,7 @@ function handleImageDownload(src, id) {
 }
 
 // ==============================
-// Close single view
+// Close single
 // ==============================
 function closeSingleView() {
   const overlay = document.querySelector(".single-overlay");
@@ -176,9 +195,9 @@ if (zipBtn) {
       document.querySelector(".filters button.active")?.dataset.filter ||
       "all";
 
-    const targets = images.filter(
+    const targets = imagesData.filter(
       img =>
-        activeFilter === "all" || img.dataset.category === activeFilter
+        activeFilter === "all" || img.category === activeFilter
     );
 
     for (const img of targets) {
@@ -196,7 +215,7 @@ if (zipBtn) {
 }
 
 // ==============================
-// Initial & SPA state sync
+// SPA sync
 // ==============================
 function syncState() {
   const overlay = document.querySelector(".single-overlay");
