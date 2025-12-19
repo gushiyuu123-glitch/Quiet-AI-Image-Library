@@ -1,56 +1,164 @@
 <!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
 
+  <!-- ======================= -->
+  <!--          SEO            -->
+  <!-- ======================= -->
   <title id="seo-title">Quiet AI — Image</title>
   <meta id="seo-desc" name="description" content="" />
+  <link rel="canonical" id="seo-canonical" href="" />
 
-  <meta property="og:image" id="seo-og-image" content="" />
+  <!-- OGP -->
+  <meta property="og:title" id="og-title" content="" />
+  <meta property="og:description" id="og-desc" content="" />
+  <meta property="og:image" id="og-image" content="" />
+  <meta property="og:url" id="og-url" content="" />
+  <meta property="og:type" content="article" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/src/detail.css" />
 </head>
 
 <body>
-  <main id="image-container"></main>
 
-  <script type="module">
-    import data from "/data/images.json" assert { type: "json" };
+<main class="container">
 
-    const params = new URLSearchParams(window.location.search);
-    const id = params.get("img");
+  <!-- パンくず（最上） -->
+  <nav class="breadcrumb">
+    <a href="/">Quiet AI</a> / <span id="breadcrumb-cat"></span>
+  </nav>
 
-    let found = null;
+  <!-- タイトル（画像の名前） -->
+  <h1 id="img-title" class="title"></h1>
 
-    // 全カテゴリから検索
-    for (const cat of Object.values(data)) {
-      const match = cat.find(item => item.id === id);
-      if (match) {
-        found = match;
-        break;
+  <!-- 大画像 -->
+  <div class="image-wrap">
+    <img id="main-img" src="" alt="" loading="eager">
+  </div>
+
+  <!-- カテゴリ表示 -->
+  <p id="category-label" class="category"></p>
+
+  <!-- 前後ナビ（画像の文脈） -->
+  <div class="nav">
+    <a id="prev-link" class="prev"></a>
+    <a id="next-link" class="next"></a>
+  </div>
+
+  <!-- カテゴリに戻る（ナビの延長として近づける） -->
+  <div class="back-area">
+    <a id="back-link" class="back-link">← Back to <span id="back-cat-name"></span></a>
+  </div>
+
+  <!-- シェア（完全独立の補助セクション） -->
+  <div class="share">
+    <p class="share-label">Share</p>
+    <a id="share-twitter" target="_blank">Twitter</a>
+    <a id="share-copy" style="cursor:pointer">Copy URL</a>
+  </div>
+
+</main>
+
+<script>
+  fetch("/data/images.json")
+    .then(res => res.json())
+    .then(data => {
+      const params = new URLSearchParams(location.search);
+      const id = params.get("img");
+
+      const flat = Object.values(data).flat();
+      const index = flat.findIndex((i) => i.id === id);
+      const found = flat[index];
+
+      if (!found) {
+        document.body.innerHTML = "<p style='padding:40px'>Image Not Found</p>";
+        return;
       }
+
+      // Main Image
+      const img = document.getElementById("main-img");
+      img.src = found.src;
+      img.alt = found.alt;
+
+      // Texts
+      document.getElementById("img-title").innerText = found.alt;
+      document.getElementById("breadcrumb-cat").innerText = found.category;
+      document.getElementById("category-label").innerText =
+        "Category: " + found.category;
+
+      // Prev Next
+      const prev = flat[index - 1] || flat[flat.length - 1];
+      const next = flat[index + 1] || flat[0];
+
+      document.getElementById("prev-link").href = `/image.html?img=${prev.id}`;
+      document.getElementById("prev-link").innerText = `← ${prev.id}`;
+
+      document.getElementById("next-link").href = `/image.html?img=${next.id}`;
+      document.getElementById("next-link").innerText = `${next.id} →`;
+
+      // Share
+      const url = location.href;
+
+      document.getElementById("share-twitter").href =
+        `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+          found.alt
+        )}&url=${encodeURIComponent(url)}`;
+      
+      document.getElementById("share-copy").onclick = () => {
+        navigator.clipboard.writeText(url);
+        alert("URL copied.");
+      };
+    });
+
+   document.addEventListener("DOMContentLoaded", () => {
+  const img = document.getElementById("main-img");
+
+  img.style.cursor = "pointer";
+
+  img.addEventListener("click", () => {
+    const src = img.src;
+    const filename = src.split("/").pop();
+
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      window.open(src, "_blank");
+    } else {
+      const link = document.createElement("a");
+      link.href = src;
+      link.download = filename;
+      link.click();
     }
+  });
+});
+ fetch("/data/images.json")
+    .then((res) => res.json())
+    .then((data) => {
 
-    if (!found) {
-      document.body.innerHTML = "<p>Image not found</p>";
-      throw new Error("Not found");
-    }
+      // …既存の処理…
 
-    // SEO 設定
-    document.getElementById("seo-title").innerText =
-      `${found.alt} | Quiet AI Image Library`;
+      // ==========================
+      // Back Button
+      // ==========================
 
-    document.getElementById("seo-desc").content =
-      `Free AI image: ${found.alt}. Ideal for web design, minimal branding, and modern UI.`;
+      const back = sessionStorage.getItem("quiet-category") || "all";
 
-    document.getElementById("seo-og-image").content = found.src;
+      let backUrl = "/";
+      let backLabel = " Back to All Images";
 
-    // 表示
-    document.getElementById("image-container").innerHTML = `
-      <h1>${found.alt}</h1>
-      <img src="${found.src}" alt="${found.alt}" loading="eager">
-      <p>Category: ${found.category}</p>
-      <a href="/">← Back to Library</a>
-    `;
-  </script>
+      if (back !== "all") {
+        backUrl = `/${back}`;
+        backLabel = `← Back to ${back.charAt(0).toUpperCase() + back.slice(1)}`;
+      }
+
+      const backLink = document.getElementById("back-link");
+      backLink.href = backUrl;
+      backLink.innerText = backLabel;
+    });
+</script>
+
 </body>
 </html>

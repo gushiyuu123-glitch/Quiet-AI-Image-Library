@@ -1,75 +1,81 @@
 {
   "architecture": [
-    {
-      "id": "architecture-001",
-      "src": "/images/architecture-001.png",
-      "category": "architecture",
-      "alt": "Minimal architectural space with soft natural light and quiet atmosphere",
-      "loading": "lazy"
-    },
-    {
-      "id": "architecture-002",
-      "src": "/images/architecture-002.png",
-      "category": "architecture",
-      "alt": "Calm modern architecture with soft shadow and gentle daylight",
-      "loading": "lazy"
-    },
-    {
-      "id": "architecture-003",
-      "src": "/images/architecture-003.png",
-      "category": "architecture",
-      "alt": "Concrete minimal building interior with serene lighting for web backgrounds",
-      "loading": "lazy"
-    }
+    { "id": "architecture-001", "src": "/images/architecture-001.png","category": "architecture", "alt": "Minimal architectural space with soft light", "loading": "lazy" },
+    { "id": "architecture-002", "src": "/images/architecture-002.png", "category": "architecture", "alt": "Quiet modern architecture with shadow", "loading": "lazy" },
+    { "id": "architecture-003", "src": "/images/architecture-003.png", "category": "architecture", "alt": "Concrete architecture with calm atmosphere", "loading": "lazy" },
+    { "id": "architecture-004", "src": "/images/architecture-004.png", "category": "architecture", "alt": "Minimal building interior with natural light", "loading": "lazy" },
+    { "id": "architecture-005", "src": "/images/architecture-005.png", "category": "architecture", 	"alt":	"Architectural space with soft contrast",	"loading":"lazy"},
+    {	"id":"architecture-006","src":"/images/architecture-006.png","category":"architecture","alt":"Modern architecture in neutral tones","loading":"lazy"},
+    { "id": "architecture-007", "src": "/images/architecture-007.png", "category": "architecture", "alt": "Quiet architectural geometry", "loading": "lazy" },
+    { "id": "architecture-008", "src": "/images/architecture-008.png", "category": "architecture", "alt": "Minimal architectural form and light", "loading": "lazy" },
+    { "id": "architecture-009", "src": "/images/architecture-009.png", "category": "architecture", "alt": "Soft-lit concrete architecture", "loading": "lazy" },
+    { "id": "architecture-010", "src": "/images/architecture-010.png", "category": "architecture", 	"alt":"Calm modern architectural space","loading":"lazy" }
   ],
 
   "light": [
-    {
-      "id": "light-001",
-      "src": "/images/light-001.png",
-      "category": "light",
-      "alt": "Soft ambient light falling on minimal surface for quiet design",
-      "loading": "lazy"
-    }
+    { "id": "light-001", "src": "/images/light-001.png", "category": "light", "alt": "Soft natural light in empty space", "loading": "lazy" },
+    { "id": "light-002", "src": "/images/light-002.png", "category": "light", "alt": "Minimal light and shadow composition", "loading": "lazy" },
+    { "id": "light-003", "src": "/images/light-003.png", "category": "light", "alt": "Sunlight passing through structure", "loading": "lazy" },
+    { "id": "light-004", "src": "/images/light-004.png", "category": "light", 	"alt":"Quiet light gradient in space","loading":"lazy"},
+    {	"id":"light-005","src":"/images/light-005.png","category":"light","alt":"Soft daylight and subtle shadow","loading":"lazy"},
+    {	"id":"light-006","src":"/images/light-006.png","category":"light","alt":"Minimal lighting for web backgrounds","loading":"lazy"},
+    {	"id":"light-007","src":"/images/light-007.png","category":"light","alt":"Calm light atmosphere","loading":"lazy"},
+    {	"id":"light-008","src":"/images/light-008.png","category":"light","alt":"Natural light texture","loading":"lazy"},
+    {	"id":"light-009","src":"/images/light-009.png","category":"light","alt":"Architectural light and shadow","loading":"lazy"},
+    {	"id":"light-010","src":"/images/light-010.png","category":"light","alt":"Soft ambient light ","loading":"lazy"}
   ],
 
   "texture": [
-    {
-      "id": "texture-001",
-      "src": "/images/texture-001.png",
-      "category": "texture",
-      "alt": "Minimal abstract texture with natural soft tones for design backgrounds",
-      "loading": "lazy"
-    }
+    { "id": "texture-001", "src": "/images/texture-001.png", "category": "texture", "alt": "Neutral texture surface", "loading": "lazy" },
+    { "id": "texture-002", "src": "/images/texture-002.png", "category": "texture", "alt": "Minimal material texture", "loading": "lazy" },
+    { "id": "texture-003", "src": "/images/texture-003.png", "category": "texture", "alt": "Soft abstract texture", "loading": "lazy" },
+    { "id": "texture-004", "src": "/images/texture-004.png", "category": "texture", 	"alt":"Calm texture with subtle depth","loading":"lazy"},
+    {	"id":"texture-005","src":"/images/texture-005.png","category":"texture","alt":"Minimal background texture","loading":"lazy"},
+    {	"id":"texture-006","src":"/images/texture-006.png","category":"texture","alt":"Neutral surface detail","loading":"lazy"},
+    { "id": "texture-007", "src": "/images/texture-007.png", "category": "texture", "alt": "Quiet texture pattern", "loading": "lazy" },
+    { "id": "texture-008", "src": "/images/texture-008.png", "category": "texture", "alt": "Soft material texture", "loading": "lazy" },
+    { "id": "texture-009", "src": "/images/texture-009.png", "category": "texture", "alt": "Minimal abstract texture", "loading": "lazy" },
+    { "id": "texture-010", "src": "/images/texture-010.png", "category": "texture", 	"alt":"Subtle neutral texture","loading":"lazy" }
   ],
 
   "people": [
-    {
-      "id": "people-001",
-      "src": "/images/people-001.png",
-      "category": "people",
-      "alt": "Quiet human figure in minimal architecture with soft lighting",
-      "loading": "lazy"
-    }
+    { "id": "people-001", "src": "/images/people-001.png", "category": "people", "alt": "Quiet human figure in minimal space", "loading": "lazy" },
+    { "id": "people-002", "src": "/images/people-002.png", "category": "people", "alt": "Silhouette of person in calm architecture", "loading": "lazy" },
+    { "id": "people-003", "src": "/images/people-003.png", "category": "people", "alt": "Back view of person in soft light", "loading": "lazy" },
+    { "id": "people-004", "src": "/images/people-004.png", "category": "people", 	"alt":"Human presence in minimal interior","loading":"lazy"},
+    {	"id":"people-005","src":"/images/people-005.png","category":"people","alt":"Quiet editorial human scene","loading":"lazy"},
+    {	"id":"people-006","src":"/images/people-006.png","category":"people","alt":"Minimal human figure and space","loading":"lazy"},
+    {	"id":"people-007","src":"/images/people-007.png","category":"people","alt":"Soft silhouette in calm environment","loading":"lazy"},
+    {	"id":"people-008","src":"/images/people-008.png","category":"people","alt":"Human scale in architectural space","loading":"lazy"},
+    {	"id":"people-009","src":"/images/people-009.png","category":"people","alt":"Calm human model in minimal workspace","loading":"lazy"},
+    {	"id":"people-010","src":"/images/people-010.png","category":"people","alt":"Neutral human model looking away in soft light ","loading ":"lazy"},
+    {	"id":"people-011","src":"/images/people-011.png","category":"people","alt":"Professional human model in modern interior ","loading ":"lazy"},
+    {	"id":"people-012","src":"/images/people-012.png","category":"people","alt":"Minimal lifestyle scene with calm human presence ","loading ":"lazy"}
   ],
 
   "workspace": [
-    {
-      "id": "workspace-001",
-      "src": "/images/workspace-001.png",
-      "category": "workspace",
-      "alt": "Minimal calm workspace with soft natural daylight",
-      "loading": "lazy"
-    }
+    { "id": "workspace-001", "src": "/images/workspace-001.png", "category": "workspace",   "alt": "Minimal workspace with soft daylight", "loading": "lazy" },
+    { "id": "workspace-002", "src": "/images/workspace-002.png", "category": "workspace", "alt": "Quiet modern desk setup", "loading": "lazy" },
+    { "id": "workspace-003", "src": "/images/workspace-003.png", "category": "workspace", 	"alt":"Calm creative workspace","loading":"lazy"},
+    {	"id":"workspace-004","src":"/images/workspace-004.png","category":"workspace","alt":"Minimal studio environment","loading":"lazy"},
+    {	"id":"workspace-005","src":"/images/workspace-005.png","category":"workspace","alt":"Soft-lit workspace interior","loading":"lazy"},
+    {	"id":"workspace-006","src":"/images/workspace-006.png","category":"workspace","alt":"Neutral workspace scene","loading":"lazy"},
+    { "id": "workspace-007", "src": "/images/workspace-007.png", "category": "workspace", "alt": "Minimal desk with laptop and natural light", "loading": "lazy" },
+    { "id": "workspace-008", "src": "/images/workspace-008.png", "category": "workspace", "alt": "Quiet home office workspace", "loading": "lazy" },
+    { "id": "workspace-009", "src": "/images/workspace-009.png", "category": "workspace", "alt": "Modern workspace with negative space", "loading": "lazy" },
+    { "id": "workspace-010", "src": "/images/workspace-010.png", "category": "workspace", 	"alt":"Clean workspace for creative professionals","loading":"lazy"}
   ],
 
   "nature": [
-    {
-      "id": "nature-001",
-      "src": "/images/nature-001.png",
-      "category": "nature",
-      "alt": "Soft natural landscape with quiet ambient lighting",
-      "loading": "lazy"
-    }
+    { "id": "nature-001", "src": "/images/nature-001.png", "category": "nature", "alt":"category architectureMinimal natural landscape with soft light", "loading": "lazy" },
+    { "id": "nature-002", "src": "/images/nature-002.png", "category": "nature", "alt": "Quiet nature texture and space", "loading": "lazy" },
+    { "id": "nature-003", "src": "/images/nature-003.png", "category": "nature", 	"alt":"Calm natural surface detail","loading":"lazy"},
+    {	"id":"nature-004","src":"/images/nature-004.png","category":"nature","alt":"Soft natural tones and light","loading":"lazy"},
+    {	"id":"nature-005","src":"/images/nature-005.png","category":"nature","alt":"Minimal outdoor scene","loading":"lazy"},
+    {	"id":"nature-006","src":"/images/nature-006.png","category":"nature","alt":"Quiet natural atmosphere","loading":"lazy"},
+    { "id": "nature-007", "src": "/images/nature-007.png", "category": "nature", "alt": "Minimal sky and horizon with soft gradient", "loading": "lazy" },
+    { "id": "nature-008", "src": "/images/nature-008.png", "category": "nature", "alt": "Calm natural texture inspired by sand or stone", "loading": "lazy" },
+    { "id": "nature-009", "src": "/images/nature-009.png", "category": "nature", "alt": "Soft natural light over minimal landscape", "loading": "lazy" },
+    { "id": "nature-010", "src": "/images/nature-010.png", 	"category":"nature","alt":"Quiet abstract nature background","loading":"lazy"}
   ]
 }

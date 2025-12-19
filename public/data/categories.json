@@ -1,0 +1,10 @@
+[
+  { "id": "all", "label": "All" },
+
+  { "id": "architecture", "label": "Architecture" },
+  { "id": "light", "label": "Light" },
+  { "id": "texture", "label": "Texture" },
+  { "id": "people", "label": "People" },
+  { "id": "workspace", "label": "Workspace" },
+  { "id": "nature", "label": "Nature" }
+]
