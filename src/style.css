@@ -25,41 +25,69 @@ img {
 body {
   background: #0b0b0b;
   color: #eaeaea;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family:
+    "Inter", "Noto Sans JP",
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   padding-bottom: 180px;
 }
 
+/* 静かなフェード */
+body {
+  animation: quietFade 0.6s ease;
+}
+
+@keyframes quietFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 /* =========================================================
-   HERO (Top)
+   HERO
 ========================================================= */
 .hero {
   min-height: 56vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 8vh 6vw 4vh;
-  max-width: 880px;
+  padding: 10vh 6vw 4vh;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .hero h1 {
-  font-size: clamp(2.3rem, 4.5vw, 3.6rem);
+  font-size: clamp(2.4rem, 4.6vw, 3.7rem);
   font-weight: 500;
-  margin: 0 0 14px;
-  letter-spacing: 0.015em;
+  letter-spacing: 0.01em;
+  line-height: 1.24;
+  margin: 0 0 16px;
 }
 
 .hero .lead {
-  font-size: 1rem;
+  font-size: 1.05rem;
   opacity: 0.75;
+  line-height: 1.7;
 }
 
 .hero .hint {
   font-size: 12px;
-  opacity: 0.55;
+  opacity: 0.5;
   margin-top: 18px;
+  letter-spacing: 0.03em;
+}
+
+/* =========================================================
+   SEO CATEGORY TEXT（非表示だが構造は整える）
+========================================================= */
+
+#seo-category-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  left: -9999px;
 }
 
 /* =========================================================
@@ -68,9 +96,11 @@ body {
 .filters {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
-  margin: 24px 6vw 48px;
-  align-items: center;
+  gap: 18px;
+  justify-content: center;   /* ← カテゴリ中央揃え */
+  margin: 20px auto 42px;
+  padding: 0 6vw;
+  max-width: 900px;
 }
 
 .filters button {
@@ -78,10 +108,12 @@ body {
   border: none;
   color: inherit;
   font-size: 12px;
-  padding: 0;
-  opacity: 0.42;
+  padding: 1px 0;
+  opacity: 0.38;
   cursor: pointer;
   transition: opacity 0.28s ease, transform 0.25s ease;
+  letter-spacing: 0.05em;
+  font-weight: 300;
 }
 
 .filters button:hover {
@@ -93,97 +125,129 @@ body {
   transform: translateY(-1px);
 }
 
-/* ZIP */
+/* ZIP ボタンをカテゴリの下の右端に配置 */
 #zip-download {
-  margin-left: auto;
-  opacity: 0.35;
+  width: 100%;
+  text-align: center;
+   margin-top: 12px;
+   margin-bottom: 8px;
 }
 
 #zip-download:hover {
   opacity: 0.7;
 }
-
 /* =========================================================
    GRID
 ========================================================= */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 32px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 34px;
   padding: 0 6vw;
   max-width: 1600px;
   margin: 0 auto 120px;
-  min-height: 40vh; /* CLS対策 */
+  min-height: 40vh;
+  transition: opacity 0.3s ease;
 }
 
 .grid img {
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.4s ease;
+  transition: transform 0.35s ease, opacity 0.3s ease, box-shadow 0.45s ease;
   background: #111;
 }
 
 .grid img:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
   opacity: 0.92;
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.45);
 }
 
 /* =========================================================
-   SINGLE VIEW OVERLAY
+   LICENSE
 ========================================================= */
-.single-overlay {
-  position: fixed;
-  inset: 0;
-  background: #0b0b0b;
-  z-index: 9999;
-  animation: fadeIn 0.35s ease forwards;
+.license {
+  max-width: 640px;
+  margin: 0 auto 100px;
+  padding: 0 6vw;
+  font-size: 12px;
+  line-height: 1.75;
+  opacity: 0.55;
+  letter-spacing: 0.03em;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.single {
-  min-height: 100vh;
+/* =========================================================
+   CTA (Minimal Templates)
+========================================================= */
+.cta-templates {
+  width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 8vh 6vw;
-  text-align: center;
+  margin: 4rem 0 3rem;
+  animation: fadeUp 1.3s ease;
 }
 
-.single img {
-  max-width: 100%;
-  max-height: 74vh;
-  border-radius: 8px;
-  margin-bottom: 16px;
-  cursor: pointer;
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-/* Close */
-.close-btn {
-  position: absolute;
-  top: 26px;
-  right: 26px;
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(8px);
-  border: none;
-  color: #e5e5e5;
-  padding: 8px 11px;
-  font-size: 18px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.25s ease;
+.cta-button {
+  display: inline-block;
+  padding: 14px 38px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 0.92rem;
+  letter-spacing: 0.11em;
+  text-decoration: none;
+  transition: all 0.35s ease;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(5px);
 }
 
-.close-btn:hover {
+.cta-button:hover {
   background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.28);
+  color: white;
   transform: translateY(-2px);
 }
 
+/* =========================================================
+   FOOTER
+========================================================= */
+footer {
+  margin: 100px 6vw 60px;
+  font-size: 12px;
+  line-height: 1.7;
+  opacity: 0.65;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 48vh;
+  }
+
+  .grid {
+    gap: 22px;
+  }
+
+  .cta-button {
+    padding: 12px 28px;
+    font-size: 0.85rem;
+  }
+}
 /* ==============================
    Screen Reader Only (SEO text)
 ============================== */
@@ -218,89 +282,4 @@ body {
 .save-toast.visible {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
-}
-
-/* =========================================================
-   LICENSE
-========================================================= */
-.license {
-  max-width: 640px;
-  margin: 0 auto 100px;
-  padding: 0 6vw;
-  font-size: 12px;
-  line-height: 1.7;
-  opacity: 0.55;
-}
-
-/* =========================================================
-   CTA (Minimal Templates)
-========================================================= */
-.cta-templates {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 3rem 0 2.5rem;
-  animation: fadeUp 1.3s ease;
-}
-
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(14px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.cta-button {
-  display: inline-block;
-  padding: 14px 36px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 999px;
-  color: rgba(255, 255, 255, 0.86);
-  font-size: 0.9rem;
-  letter-spacing: 0.08em;
-  text-decoration: none;
-  transition: all 0.35s ease;
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(5px);
-}
-
-.cta-button:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.28);
-  color: white;
-  transform: translateY(-2px);
-}
-
-/* =========================================================
-   FOOTER
-========================================================= */
-footer {
-  margin: 100px 6vw 60px;
-  font-size: 12px;
-  line-height: 1.7;
-  opacity: 0.65;
-  text-align: center;
-}
-
-footer a {
-  color: inherit;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-}
-
-/* =========================================================
-   RESPONSIVE
-========================================================= */
-@media (max-width: 768px) {
-  .hero {
-    min-height: 48vh;
-  }
-  .grid {
-    gap: 20px;
-  }
-  .cta-button {
-    padding: 12px 28px;
-    font-size: 0.85rem;
-  }
-  .single img {
-    max-height: 65vh;
-  }
 }
