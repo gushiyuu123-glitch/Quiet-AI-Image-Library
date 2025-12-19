@@ -1,81 +1,483 @@
 {
   "architecture": [
-    { "id": "architecture-001", "src": "/images/architecture-001.png","category": "architecture", "alt": "Minimal architectural space with soft light", "loading": "lazy" },
-    { "id": "architecture-002", "src": "/images/architecture-002.png", "category": "architecture", "alt": "Quiet modern architecture with shadow", "loading": "lazy" },
-    { "id": "architecture-003", "src": "/images/architecture-003.png", "category": "architecture", "alt": "Concrete architecture with calm atmosphere", "loading": "lazy" },
-    { "id": "architecture-004", "src": "/images/architecture-004.png", "category": "architecture", "alt": "Minimal building interior with natural light", "loading": "lazy" },
-    { "id": "architecture-005", "src": "/images/architecture-005.png", "category": "architecture", 	"alt":	"Architectural space with soft contrast",	"loading":"lazy"},
-    {	"id":"architecture-006","src":"/images/architecture-006.png","category":"architecture","alt":"Modern architecture in neutral tones","loading":"lazy"},
-    { "id": "architecture-007", "src": "/images/architecture-007.png", "category": "architecture", "alt": "Quiet architectural geometry", "loading": "lazy" },
-    { "id": "architecture-008", "src": "/images/architecture-008.png", "category": "architecture", "alt": "Minimal architectural form and light", "loading": "lazy" },
-    { "id": "architecture-009", "src": "/images/architecture-009.png", "category": "architecture", "alt": "Soft-lit concrete architecture", "loading": "lazy" },
-    { "id": "architecture-010", "src": "/images/architecture-010.png", "category": "architecture", 	"alt":"Calm modern architectural space","loading":"lazy" }
+    {
+      "id": "architecture-001",
+      "category": "architecture",
+      "src": "/images/architecture/architecture-001.png",
+      "alt": "architecture 001: minimal modern architectural space with soft natural light and subtle concrete texture, suitable for sophisticated web design and branding visuals.",
+      "loading": "lazy"
+    },
+    {
+      "id": "architecture-002",
+      "category": "architecture",
+      "src": "/images/architecture/architecture-002.png",
+      "alt": "architecture 002: minimal modern architectural space with soft natural light and subtle concrete texture, suitable for sophisticated web design and branding visuals.",
+      "loading": "lazy"
+    },
+    {
+      "id": "architecture-003",
+      "category": "architecture",
+      "src": "/images/architecture/architecture-003.png",
+      "alt": "architecture 003: minimal modern architectural space with soft natural light and subtle concrete texture, suitable for sophisticated web design and branding visuals.",
+      "loading": "lazy"
+    },
+    {
+      "id": "architecture-004",
+      "category": "architecture",
+      "src": "/images/architecture/architecture-004.png",
+      "alt": "architecture 004: minimal modern architectural space with soft natural light and subtle concrete texture, suitable for sophisticated web design and branding visuals.",
+      "loading": "lazy"
+    },
+    {
+      "id": "architecture-005",
+      "category": "architecture",
+      "src": "/images/architecture/architecture-005.png",
+      "alt": "architecture 005: minimal modern architectural space with soft natural light and subtle concrete texture, suitable for sophisticated web design and branding visuals.",
+      "loading": "lazy"
+    },
+    {
+      "id": "architecture-006",
+      "category": "architecture",
+      "src": "/images/architecture/architecture-006.png",
+      "alt": "architecture 006: minimal modern architectural space with soft natural light and subtle concrete texture, suitable for sophisticated web design and branding visuals.",
+      "loading": "lazy"
+    },
+    {
+      "id": "architecture-007",
+      "category": "architecture",
+      "src": "/images/architecture/architecture-007.png",
+      "alt": "architecture 007: minimal modern architectural space with soft natural light and subtle concrete texture, suitable for sophisticated web design and branding visuals.",
+      "loading": "lazy"
+    },
+    {
+      "id": "architecture-008",
+      "category": "architecture",
+      "src": "/images/architecture/architecture-008.png",
+      "alt": "architecture 008: minimal modern architectural space with soft natural light and subtle concrete texture, suitable for sophisticated web design and branding visuals.",
+      "loading": "lazy"
+    },
+    {
+      "id": "architecture-009",
+      "category": "architecture",
+      "src": "/images/architecture/architecture-009.png",
+      "alt": "architecture 009: minimal modern architectural space with soft natural light and subtle concrete texture, suitable for sophisticated web design and branding visuals.",
+      "loading": "lazy"
+    },
+    {
+      "id": "architecture-010",
+      "category": "architecture",
+      "src": "/images/architecture/architecture-010.png",
+      "alt": "architecture 010: minimal modern architectural space with soft natural light and subtle concrete texture, suitable for sophisticated web design and branding visuals.",
+      "loading": "lazy"
+    },
+    {
+      "id": "architecture-011",
+      "category": "architecture",
+      "src": "/images/architecture/architecture-011.png",
+      "alt": "architecture 011: minimal modern architectural space with soft natural light and subtle concrete texture, suitable for sophisticated web design and branding visuals.",
+      "loading": "lazy"
+    },
+    {
+      "id": "architecture-012",
+      "category": "architecture",
+      "src": "/images/architecture/architecture-012.png",
+      "alt": "architecture 012: minimal modern architectural space with soft natural light and subtle concrete texture, suitable for sophisticated web design and branding visuals.",
+      "loading": "lazy"
+    },
+    {
+      "id": "architecture-013",
+      "category": "architecture",
+      "src": "/images/architecture/architecture-013.png",
+      "alt": "architecture 013: minimal modern architectural space with soft natural light and subtle concrete texture, suitable for sophisticated web design and branding visuals.",
+      "loading": "lazy"
+    },
+    {
+      "id": "architecture-014",
+      "category": "architecture",
+      "src": "/images/architecture/architecture-014.png",
+      "alt": "architecture 014: minimal modern architectural space with soft natural light and subtle concrete texture, suitable for sophisticated web design and branding visuals.",
+      "loading": "lazy"
+    },
+    {
+      "id": "architecture-015",
+      "category": "architecture",
+      "src": "/images/architecture/architecture-015.png",
+      "alt": "architecture 015: minimal modern architectural space with soft natural light and subtle concrete texture, suitable for sophisticated web design and branding visuals.",
+      "loading": "lazy"
+    }
   ],
-
   "light": [
-    { "id": "light-001", "src": "/images/light-001.png", "category": "light", "alt": "Soft natural light in empty space", "loading": "lazy" },
-    { "id": "light-002", "src": "/images/light-002.png", "category": "light", "alt": "Minimal light and shadow composition", "loading": "lazy" },
-    { "id": "light-003", "src": "/images/light-003.png", "category": "light", "alt": "Sunlight passing through structure", "loading": "lazy" },
-    { "id": "light-004", "src": "/images/light-004.png", "category": "light", 	"alt":"Quiet light gradient in space","loading":"lazy"},
-    {	"id":"light-005","src":"/images/light-005.png","category":"light","alt":"Soft daylight and subtle shadow","loading":"lazy"},
-    {	"id":"light-006","src":"/images/light-006.png","category":"light","alt":"Minimal lighting for web backgrounds","loading":"lazy"},
-    {	"id":"light-007","src":"/images/light-007.png","category":"light","alt":"Calm light atmosphere","loading":"lazy"},
-    {	"id":"light-008","src":"/images/light-008.png","category":"light","alt":"Natural light texture","loading":"lazy"},
-    {	"id":"light-009","src":"/images/light-009.png","category":"light","alt":"Architectural light and shadow","loading":"lazy"},
-    {	"id":"light-010","src":"/images/light-010.png","category":"light","alt":"Soft ambient light ","loading":"lazy"}
+    {
+      "id": "light-001",
+      "category": "light",
+      "src": "/images/light/light-001.png",
+      "alt": "light 001: calm natural lighting atmosphere with soft gradients and delicate shadow expressions, ideal for minimal UI backgrounds and artistic layouts.",
+      "loading": "lazy"
+    },
+    {
+      "id": "light-002",
+      "category": "light",
+      "src": "/images/light/light-002.png",
+      "alt": "light 002: calm natural lighting atmosphere with soft gradients and delicate shadow expressions, ideal for minimal UI backgrounds and artistic layouts.",
+      "loading": "lazy"
+    },
+    {
+      "id": "light-003",
+      "category": "light",
+      "src": "/images/light/light-003.png",
+      "alt": "light 003: calm natural lighting atmosphere with soft gradients and delicate shadow expressions, ideal for minimal UI backgrounds and artistic layouts.",
+      "loading": "lazy"
+    },
+    {
+      "id": "light-004",
+      "category": "light",
+      "src": "/images/light/light-004.png",
+      "alt": "light 004: calm natural lighting atmosphere with soft gradients and delicate shadow expressions, ideal for minimal UI backgrounds and artistic layouts.",
+      "loading": "lazy"
+    },
+    {
+      "id": "light-005",
+      "category": "light",
+      "src": "/images/light/light-005.png",
+      "alt": "light 005: calm natural lighting atmosphere with soft gradients and delicate shadow expressions, ideal for minimal UI backgrounds and artistic layouts.",
+      "loading": "lazy"
+    },
+    {
+      "id": "light-006",
+      "category": "light",
+      "src": "/images/light/light-006.png",
+      "alt": "light 006: calm natural lighting atmosphere with soft gradients and delicate shadow expressions, ideal for minimal UI backgrounds and artistic layouts.",
+      "loading": "lazy"
+    },
+    {
+      "id": "light-007",
+      "category": "light",
+      "src": "/images/light/light-007.png",
+      "alt": "light 007: calm natural lighting atmosphere with soft gradients and delicate shadow expressions, ideal for minimal UI backgrounds and artistic layouts.",
+      "loading": "lazy"
+    },
+    {
+      "id": "light-008",
+      "category": "light",
+      "src": "/images/light/light-008.png",
+      "alt": "light 008: calm natural lighting atmosphere with soft gradients and delicate shadow expressions, ideal for minimal UI backgrounds and artistic layouts.",
+      "loading": "lazy"
+    },
+    {
+      "id": "light-009",
+      "category": "light",
+      "src": "/images/light/light-009.png",
+      "alt": "light 009: calm natural lighting atmosphere with soft gradients and delicate shadow expressions, ideal for minimal UI backgrounds and artistic layouts.",
+      "loading": "lazy"
+    },
+    {
+      "id": "light-010",
+      "category": "light",
+      "src": "/images/light/light-010.png",
+      "alt": "light 010: calm natural lighting atmosphere with soft gradients and delicate shadow expressions, ideal for minimal UI backgrounds and artistic layouts.",
+      "loading": "lazy"
+    }
   ],
-
-  "texture": [
-    { "id": "texture-001", "src": "/images/texture-001.png", "category": "texture", "alt": "Neutral texture surface", "loading": "lazy" },
-    { "id": "texture-002", "src": "/images/texture-002.png", "category": "texture", "alt": "Minimal material texture", "loading": "lazy" },
-    { "id": "texture-003", "src": "/images/texture-003.png", "category": "texture", "alt": "Soft abstract texture", "loading": "lazy" },
-    { "id": "texture-004", "src": "/images/texture-004.png", "category": "texture", 	"alt":"Calm texture with subtle depth","loading":"lazy"},
-    {	"id":"texture-005","src":"/images/texture-005.png","category":"texture","alt":"Minimal background texture","loading":"lazy"},
-    {	"id":"texture-006","src":"/images/texture-006.png","category":"texture","alt":"Neutral surface detail","loading":"lazy"},
-    { "id": "texture-007", "src": "/images/texture-007.png", "category": "texture", "alt": "Quiet texture pattern", "loading": "lazy" },
-    { "id": "texture-008", "src": "/images/texture-008.png", "category": "texture", "alt": "Soft material texture", "loading": "lazy" },
-    { "id": "texture-009", "src": "/images/texture-009.png", "category": "texture", "alt": "Minimal abstract texture", "loading": "lazy" },
-    { "id": "texture-010", "src": "/images/texture-010.png", "category": "texture", 	"alt":"Subtle neutral texture","loading":"lazy" }
-  ],
-
-  "people": [
-    { "id": "people-001", "src": "/images/people-001.png", "category": "people", "alt": "Quiet human figure in minimal space", "loading": "lazy" },
-    { "id": "people-002", "src": "/images/people-002.png", "category": "people", "alt": "Silhouette of person in calm architecture", "loading": "lazy" },
-    { "id": "people-003", "src": "/images/people-003.png", "category": "people", "alt": "Back view of person in soft light", "loading": "lazy" },
-    { "id": "people-004", "src": "/images/people-004.png", "category": "people", 	"alt":"Human presence in minimal interior","loading":"lazy"},
-    {	"id":"people-005","src":"/images/people-005.png","category":"people","alt":"Quiet editorial human scene","loading":"lazy"},
-    {	"id":"people-006","src":"/images/people-006.png","category":"people","alt":"Minimal human figure and space","loading":"lazy"},
-    {	"id":"people-007","src":"/images/people-007.png","category":"people","alt":"Soft silhouette in calm environment","loading":"lazy"},
-    {	"id":"people-008","src":"/images/people-008.png","category":"people","alt":"Human scale in architectural space","loading":"lazy"},
-    {	"id":"people-009","src":"/images/people-009.png","category":"people","alt":"Calm human model in minimal workspace","loading":"lazy"},
-    {	"id":"people-010","src":"/images/people-010.png","category":"people","alt":"Neutral human model looking away in soft light ","loading ":"lazy"},
-    {	"id":"people-011","src":"/images/people-011.png","category":"people","alt":"Professional human model in modern interior ","loading ":"lazy"},
-    {	"id":"people-012","src":"/images/people-012.png","category":"people","alt":"Minimal lifestyle scene with calm human presence ","loading ":"lazy"}
-  ],
-
-  "workspace": [
-    { "id": "workspace-001", "src": "/images/workspace-001.png", "category": "workspace",   "alt": "Minimal workspace with soft daylight", "loading": "lazy" },
-    { "id": "workspace-002", "src": "/images/workspace-002.png", "category": "workspace", "alt": "Quiet modern desk setup", "loading": "lazy" },
-    { "id": "workspace-003", "src": "/images/workspace-003.png", "category": "workspace", 	"alt":"Calm creative workspace","loading":"lazy"},
-    {	"id":"workspace-004","src":"/images/workspace-004.png","category":"workspace","alt":"Minimal studio environment","loading":"lazy"},
-    {	"id":"workspace-005","src":"/images/workspace-005.png","category":"workspace","alt":"Soft-lit workspace interior","loading":"lazy"},
-    {	"id":"workspace-006","src":"/images/workspace-006.png","category":"workspace","alt":"Neutral workspace scene","loading":"lazy"},
-    { "id": "workspace-007", "src": "/images/workspace-007.png", "category": "workspace", "alt": "Minimal desk with laptop and natural light", "loading": "lazy" },
-    { "id": "workspace-008", "src": "/images/workspace-008.png", "category": "workspace", "alt": "Quiet home office workspace", "loading": "lazy" },
-    { "id": "workspace-009", "src": "/images/workspace-009.png", "category": "workspace", "alt": "Modern workspace with negative space", "loading": "lazy" },
-    { "id": "workspace-010", "src": "/images/workspace-010.png", "category": "workspace", 	"alt":"Clean workspace for creative professionals","loading":"lazy"}
-  ],
-
   "nature": [
-    { "id": "nature-001", "src": "/images/nature-001.png", "category": "nature", "alt":"category architectureMinimal natural landscape with soft light", "loading": "lazy" },
-    { "id": "nature-002", "src": "/images/nature-002.png", "category": "nature", "alt": "Quiet nature texture and space", "loading": "lazy" },
-    { "id": "nature-003", "src": "/images/nature-003.png", "category": "nature", 	"alt":"Calm natural surface detail","loading":"lazy"},
-    {	"id":"nature-004","src":"/images/nature-004.png","category":"nature","alt":"Soft natural tones and light","loading":"lazy"},
-    {	"id":"nature-005","src":"/images/nature-005.png","category":"nature","alt":"Minimal outdoor scene","loading":"lazy"},
-    {	"id":"nature-006","src":"/images/nature-006.png","category":"nature","alt":"Quiet natural atmosphere","loading":"lazy"},
-    { "id": "nature-007", "src": "/images/nature-007.png", "category": "nature", "alt": "Minimal sky and horizon with soft gradient", "loading": "lazy" },
-    { "id": "nature-008", "src": "/images/nature-008.png", "category": "nature", "alt": "Calm natural texture inspired by sand or stone", "loading": "lazy" },
-    { "id": "nature-009", "src": "/images/nature-009.png", "category": "nature", "alt": "Soft natural light over minimal landscape", "loading": "lazy" },
-    { "id": "nature-010", "src": "/images/nature-010.png", 	"category":"nature","alt":"Quiet abstract nature background","loading":"lazy"}
+    {
+      "id": "nature-001",
+      "category": "nature",
+      "src": "/images/nature/nature-001.png",
+      "alt": "nature 001: soft natural landscape with serene tones and subtle organic patterns, ideal for calm-themed creative and branding uses.",
+      "loading": "lazy"
+    },
+    {
+      "id": "nature-002",
+      "category": "nature",
+      "src": "/images/nature/nature-002.png",
+      "alt": "nature 002: soft natural landscape with serene tones and subtle organic patterns, ideal for calm-themed creative and branding uses.",
+      "loading": "lazy"
+    },
+    {
+      "id": "nature-003",
+      "category": "nature",
+      "src": "/images/nature/nature-003.png",
+      "alt": "nature 003: soft natural landscape with serene tones and subtle organic patterns, ideal for calm-themed creative and branding uses.",
+      "loading": "lazy"
+    },
+    {
+      "id": "nature-004",
+      "category": "nature",
+      "src": "/images/nature/nature-004.png",
+      "alt": "nature 004: soft natural landscape with serene tones and subtle organic patterns, ideal for calm-themed creative and branding uses.",
+      "loading": "lazy"
+    },
+    {
+      "id": "nature-005",
+      "category": "nature",
+      "src": "/images/nature/nature-005.png",
+      "alt": "nature 005: soft natural landscape with serene tones and subtle organic patterns, ideal for calm-themed creative and branding uses.",
+      "loading": "lazy"
+    },
+    {
+      "id": "nature-006",
+      "category": "nature",
+      "src": "/images/nature/nature-006.png",
+      "alt": "nature 006: soft natural landscape with serene tones and subtle organic patterns, ideal for calm-themed creative and branding uses.",
+      "loading": "lazy"
+    },
+    {
+      "id": "nature-007",
+      "category": "nature",
+      "src": "/images/nature/nature-007.png",
+      "alt": "nature 007: soft natural landscape with serene tones and subtle organic patterns, ideal for calm-themed creative and branding uses.",
+      "loading": "lazy"
+    },
+    {
+      "id": "nature-008",
+      "category": "nature",
+      "src": "/images/nature/nature-008.png",
+      "alt": "nature 008: soft natural landscape with serene tones and subtle organic patterns, ideal for calm-themed creative and branding uses.",
+      "loading": "lazy"
+    },
+    {
+      "id": "nature-009",
+      "category": "nature",
+      "src": "/images/nature/nature-009.png",
+      "alt": "nature 009: soft natural landscape with serene tones and subtle organic patterns, ideal for calm-themed creative and branding uses.",
+      "loading": "lazy"
+    },
+    {
+      "id": "nature-010",
+      "category": "nature",
+      "src": "/images/nature/nature-010.png",
+      "alt": "nature 010: soft natural landscape with serene tones and subtle organic patterns, ideal for calm-themed creative and branding uses.",
+      "loading": "lazy"
+    }
+  ],
+  "people": [
+    {
+      "id": "people-001",
+      "category": "people",
+      "src": "/images/people/people-001.png",
+      "alt": "people 001: minimal lifestyle scene featuring a human presence in a quiet modern environment, adding depth and emotional nuance to visual storytelling.",
+      "loading": "lazy"
+    },
+    {
+      "id": "people-002",
+      "category": "people",
+      "src": "/images/people/people-002.png",
+      "alt": "people 002: minimal lifestyle scene featuring a human presence in a quiet modern environment, adding depth and emotional nuance to visual storytelling.",
+      "loading": "lazy"
+    },
+    {
+      "id": "people-003",
+      "category": "people",
+      "src": "/images/people/people-003.png",
+      "alt": "people 003: minimal lifestyle scene featuring a human presence in a quiet modern environment, adding depth and emotional nuance to visual storytelling.",
+      "loading": "lazy"
+    },
+    {
+      "id": "people-004",
+      "category": "people",
+      "src": "/images/people/people-004.png",
+      "alt": "people 004: minimal lifestyle scene featuring a human presence in a quiet modern environment, adding depth and emotional nuance to visual storytelling.",
+      "loading": "lazy"
+    },
+    {
+      "id": "people-005",
+      "category": "people",
+      "src": "/images/people/people-005.png",
+      "alt": "people 005: minimal lifestyle scene featuring a human presence in a quiet modern environment, adding depth and emotional nuance to visual storytelling.",
+      "loading": "lazy"
+    },
+    {
+      "id": "people-006",
+      "category": "people",
+      "src": "/images/people/people-006.png",
+      "alt": "people 006: minimal lifestyle scene featuring a human presence in a quiet modern environment, adding depth and emotional nuance to visual storytelling.",
+      "loading": "lazy"
+    },
+    {
+      "id": "people-007",
+      "category": "people",
+      "src": "/images/people/people-007.png",
+      "alt": "people 007: minimal lifestyle scene featuring a human presence in a quiet modern environment, adding depth and emotional nuance to visual storytelling.",
+      "loading": "lazy"
+    },
+    {
+      "id": "people-008",
+      "category": "people",
+      "src": "/images/people/people-008.png",
+      "alt": "people 008: minimal lifestyle scene featuring a human presence in a quiet modern environment, adding depth and emotional nuance to visual storytelling.",
+      "loading": "lazy"
+    },
+    {
+      "id": "people-009",
+      "category": "people",
+      "src": "/images/people/people-009.png",
+      "alt": "people 009: minimal lifestyle scene featuring a human presence in a quiet modern environment, adding depth and emotional nuance to visual storytelling.",
+      "loading": "lazy"
+    },
+    {
+      "id": "people-010",
+      "category": "people",
+      "src": "/images/people/people-010.png",
+      "alt": "people 010: minimal lifestyle scene featuring a human presence in a quiet modern environment, adding depth and emotional nuance to visual storytelling.",
+      "loading": "lazy"
+    },
+    {
+      "id": "people-011",
+      "category": "people",
+      "src": "/images/people/people-011.png",
+      "alt": "people 011: minimal lifestyle scene featuring a human presence in a quiet modern environment, adding depth and emotional nuance to visual storytelling.",
+      "loading": "lazy"
+    },
+    {
+      "id": "people-012",
+      "category": "people",
+      "src": "/images/people/people-012.png",
+      "alt": "people 012: minimal lifestyle scene featuring a human presence in a quiet modern environment, adding depth and emotional nuance to visual storytelling.",
+      "loading": "lazy"
+    }
+  ],
+  "texture": [
+    {
+      "id": "texture-001",
+      "category": "texture",
+      "src": "/images/texture/texture-001.png",
+      "alt": "texture 001: subtle material texture with elegant neutral tones, perfect for refined website backgrounds and premium design projects.",
+      "loading": "lazy"
+    },
+    {
+      "id": "texture-002",
+      "category": "texture",
+      "src": "/images/texture/texture-002.png",
+      "alt": "texture 002: subtle material texture with elegant neutral tones, perfect for refined website backgrounds and premium design projects.",
+      "loading": "lazy"
+    },
+    {
+      "id": "texture-003",
+      "category": "texture",
+      "src": "/images/texture/texture-003.png",
+      "alt": "texture 003: subtle material texture with elegant neutral tones, perfect for refined website backgrounds and premium design projects.",
+      "loading": "lazy"
+    },
+    {
+      "id": "texture-004",
+      "category": "texture",
+      "src": "/images/texture/texture-004.png",
+      "alt": "texture 004: subtle material texture with elegant neutral tones, perfect for refined website backgrounds and premium design projects.",
+      "loading": "lazy"
+    },
+    {
+      "id": "texture-005",
+      "category": "texture",
+      "src": "/images/texture/texture-005.png",
+      "alt": "texture 005: subtle material texture with elegant neutral tones, perfect for refined website backgrounds and premium design projects.",
+      "loading": "lazy"
+    },
+    {
+      "id": "texture-006",
+      "category": "texture",
+      "src": "/images/texture/texture-006.png",
+      "alt": "texture 006: subtle material texture with elegant neutral tones, perfect for refined website backgrounds and premium design projects.",
+      "loading": "lazy"
+    },
+    {
+      "id": "texture-007",
+      "category": "texture",
+      "src": "/images/texture/texture-007.png",
+      "alt": "texture 007: subtle material texture with elegant neutral tones, perfect for refined website backgrounds and premium design projects.",
+      "loading": "lazy"
+    },
+    {
+      "id": "texture-008",
+      "category": "texture",
+      "src": "/images/texture/texture-008.png",
+      "alt": "texture 008: subtle material texture with elegant neutral tones, perfect for refined website backgrounds and premium design projects.",
+      "loading": "lazy"
+    },
+    {
+      "id": "texture-009",
+      "category": "texture",
+      "src": "/images/texture/texture-009.png",
+      "alt": "texture 009: subtle material texture with elegant neutral tones, perfect for refined website backgrounds and premium design projects.",
+      "loading": "lazy"
+    },
+    {
+      "id": "texture-010",
+      "category": "texture",
+      "src": "/images/texture/texture-010.png",
+      "alt": "texture 010: subtle material texture with elegant neutral tones, perfect for refined website backgrounds and premium design projects.",
+      "loading": "lazy"
+    }
+  ],
+  "workspace": [
+    {
+      "id": "workspace-001",
+      "category": "workspace",
+      "src": "/images/workspace/workspace-001.png",
+      "alt": "workspace 001: clean creative workspace with soft daylight and balanced negative space, excellent for productivity or tech-focused design concepts.",
+      "loading": "lazy"
+    },
+    {
+      "id": "workspace-002",
+      "category": "workspace",
+      "src": "/images/workspace/workspace-002.png",
+      "alt": "workspace 002: clean creative workspace with soft daylight and balanced negative space, excellent for productivity or tech-focused design concepts.",
+      "loading": "lazy"
+    },
+    {
+      "id": "workspace-003",
+      "category": "workspace",
+      "src": "/images/workspace/workspace-003.png",
+      "alt": "workspace 003: clean creative workspace with soft daylight and balanced negative space, excellent for productivity or tech-focused design concepts.",
+      "loading": "lazy"
+    },
+    {
+      "id": "workspace-004",
+      "category": "workspace",
+      "src": "/images/workspace/workspace-004.png",
+      "alt": "workspace 004: clean creative workspace with soft daylight and balanced negative space, excellent for productivity or tech-focused design concepts.",
+      "loading": "lazy"
+    },
+    {
+      "id": "workspace-005",
+      "category": "workspace",
+      "src": "/images/workspace/workspace-005.png",
+      "alt": "workspace 005: clean creative workspace with soft daylight and balanced negative space, excellent for productivity or tech-focused design concepts.",
+      "loading": "lazy"
+    },
+    {
+      "id": "workspace-006",
+      "category": "workspace",
+      "src": "/images/workspace/workspace-006.png",
+      "alt": "workspace 006: clean creative workspace with soft daylight and balanced negative space, excellent for productivity or tech-focused design concepts.",
+      "loading": "lazy"
+    },
+    {
+      "id": "workspace-007",
+      "category": "workspace",
+      "src": "/images/workspace/workspace-007.png",
+      "alt": "workspace 007: clean creative workspace with soft daylight and balanced negative space, excellent for productivity or tech-focused design concepts.",
+      "loading": "lazy"
+    },
+    {
+      "id": "workspace-008",
+      "category": "workspace",
+      "src": "/images/workspace/workspace-008.png",
+      "alt": "workspace 008: clean creative workspace with soft daylight and balanced negative space, excellent for productivity or tech-focused design concepts.",
+      "loading": "lazy"
+    },
+    {
+      "id": "workspace-009",
+      "category": "workspace",
+      "src": "/images/workspace/workspace-009.png",
+      "alt": "workspace 009: clean creative workspace with soft daylight and balanced negative space, excellent for productivity or tech-focused design concepts.",
+      "loading": "lazy"
+    },
+    {
+      "id": "workspace-010",
+      "category": "workspace",
+      "src": "/images/workspace/workspace-010.png",
+      "alt": "workspace 010: clean creative workspace with soft daylight and balanced negative space, excellent for productivity or tech-focused design concepts.",
+      "loading": "lazy"
+    }
   ]
 }
