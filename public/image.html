@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title id="seo-title">Quiet AI — Image</title>
+  <meta id="seo-desc" name="description" content="" />
+
+  <meta property="og:image" id="seo-og-image" content="" />
+</head>
+
+<body>
+  <main id="image-container"></main>
+
+  <script type="module">
+    import data from "/data/images.json" assert { type: "json" };
+
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("img");
+
+    let found = null;
+
+    // 全カテゴリから検索
+    for (const cat of Object.values(data)) {
+      const match = cat.find(item => item.id === id);
+      if (match) {
+        found = match;
+        break;
+      }
+    }
+
+    if (!found) {
+      document.body.innerHTML = "<p>Image not found</p>";
+      throw new Error("Not found");
+    }
+
+    // SEO 設定
+    document.getElementById("seo-title").innerText =
+      `${found.alt} | Quiet AI Image Library`;
+
+    document.getElementById("seo-desc").content =
+      `Free AI image: ${found.alt}. Ideal for web design, minimal branding, and modern UI.`;
+
+    document.getElementById("seo-og-image").content = found.src;
+
+    // 表示
+    document.getElementById("image-container").innerHTML = `
+      <h1>${found.alt}</h1>
+      <img src="${found.src}" alt="${found.alt}" loading="eager">
+      <p>Category: ${found.category}</p>
+      <a href="/">← Back to Library</a>
+    `;
+  </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+{
+  "architecture": [
+    {
+      "id": "architecture-001",
+      "src": "/images/architecture-001.png",
+      "category": "architecture",
+      "alt": "Minimal architectural space with soft natural light and quiet atmosphere",
+      "loading": "lazy"
+    },
+    {
+      "id": "architecture-002",
+      "src": "/images/architecture-002.png",
+      "category": "architecture",
+      "alt": "Calm modern architecture with soft shadow and gentle daylight",
+      "loading": "lazy"
+    },
+    {
+      "id": "architecture-003",
+      "src": "/images/architecture-003.png",
+      "category": "architecture",
+      "alt": "Concrete minimal building interior with serene lighting for web backgrounds",
+      "loading": "lazy"
+    }
+  ],
+
+  "light": [
+    {
+      "id": "light-001",
+      "src": "/images/light-001.png",
+      "category": "light",
+      "alt": "Soft ambient light falling on minimal surface for quiet design",
+      "loading": "lazy"
+    }
+  ],
+
+  "texture": [
+    {
+      "id": "texture-001",
+      "src": "/images/texture-001.png",
+      "category": "texture",
+      "alt": "Minimal abstract texture with natural soft tones for design backgrounds",
+      "loading": "lazy"
+    }
+  ],
+
+  "people": [
+    {
+      "id": "people-001",
+      "src": "/images/people-001.png",
+      "category": "people",
+      "alt": "Quiet human figure in minimal architecture with soft lighting",
+      "loading": "lazy"
+    }
+  ],
+
+  "workspace": [
+    {
+      "id": "workspace-001",
+      "src": "/images/workspace-001.png",
+      "category": "workspace",
+      "alt": "Minimal calm workspace with soft natural daylight",
+      "loading": "lazy"
+    }
+  ],
+
+  "nature": [
+    {
+      "id": "nature-001",
+      "src": "/images/nature-001.png",
+      "category": "nature",
+      "alt": "Soft natural landscape with quiet ambient lighting",
+      "loading": "lazy"
+    }
+  ]
+}

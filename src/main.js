@@ -1,7 +1,7 @@
 // ==============================
 // Load JSON
 // ==============================
-import imagesData from "./images.json";
+import imagesData from "./images.json" assert { type: "json" };
 
 // ==============================
 // Elements
@@ -10,23 +10,31 @@ const grid = document.getElementById("imageGrid");
 const filterButtons = document.querySelectorAll(".filters button");
 const zipBtn = document.getElementById("zip-download");
 
+
 // ==============================
 // Insert images dynamically
 // ==============================
-grid.innerHTML = imagesData
-  .map(
-    img => `
+function renderImages() {
+  grid.innerHTML = imagesData
+    .map(
+      img => `
       <img 
         src="${img.src}" 
         data-id="${img.id}" 
         data-category="${img.category}" 
         alt="${img.alt}"
+        loading="lazy"
       />
     `
-  )
-  .join("");
+    )
+    .join("");
+}
 
-const images = Array.from(document.querySelectorAll(".grid img"));
+renderImages();
+
+// JSON から DOM を生成したので再取得
+let images = Array.from(document.querySelectorAll(".grid img"));
+
 
 // ==============================
 // SEO Titles
@@ -45,15 +53,15 @@ function updateTitle(filter) {
   document.title = seoTitles[filter] || seoTitles.all;
 }
 
+
 // ==============================
 // Utils
 // ==============================
-const scrollToTop = () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-};
+const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
 const isMobile = () =>
   /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
 
 // ==============================
 // Filter logic
@@ -64,24 +72,23 @@ function applyFilter(filter) {
     b.setAttribute("aria-pressed", "false");
   });
 
-  const activeBtn =
+  const btn =
     document.querySelector(`.filters button[data-filter="${filter}"]`) ||
     document.querySelector(`.filters button[data-filter="all"]`);
 
-  if (activeBtn) {
-    activeBtn.classList.add("active");
-    activeBtn.setAttribute("aria-pressed", "true");
+  if (btn) {
+    btn.classList.add("active");
+    btn.setAttribute("aria-pressed", "true");
   }
 
   images.forEach(img => {
     img.style.display =
-      filter === "all" || img.dataset.category === filter
-        ? "block"
-        : "none";
+      filter === "all" || img.dataset.category === filter ? "block" : "none";
   });
 
   updateTitle(filter);
 }
+
 
 // ==============================
 // Filter button click
@@ -95,17 +102,23 @@ filterButtons.forEach(btn => {
   });
 });
 
+
 // ==============================
 // Image click → single view
 // ==============================
-images.forEach(img => {
-  img.addEventListener("click", () => {
-    const id = img.dataset.id;
-    history.pushState({}, "", `/?img=${id}`);
-    openSingleView(id);
-    scrollToTop();
+function attachImageClick() {
+  images.forEach(img => {
+    img.addEventListener("click", () => {
+      const id = img.dataset.id;
+      history.pushState({}, "", `/?img=${id}`);
+      openSingleView(id);
+      scrollToTop();
+    });
   });
-});
+}
+
+attachImageClick();
+
 
 // ==============================
 // Direct image URL access
@@ -114,13 +127,15 @@ const params = new URLSearchParams(window.location.search);
 const imgId = params.get("img");
 if (imgId) openSingleView(imgId);
 
+
 // ==============================
 // Single view
 // ==============================
 function openSingleView(id) {
   if (document.querySelector(".single-overlay")) return;
 
-  const src = `/images/${id}.png`;
+  const target = imagesData.find(i => i.id === id);
+  if (!target) return;
 
   const overlay = document.createElement("div");
   overlay.className = "single-overlay";
@@ -129,7 +144,7 @@ function openSingleView(id) {
     <button class="close-btn" aria-label="Close">×</button>
 
     <main class="single">
-      <img src="${src}" alt="">
+      <img src="${target.src}" alt="${target.alt}">
       <p class="hint">Tap image to download.</p>
       <div class="save-toast">長押しで保存できます</div>
     </main>
@@ -138,15 +153,14 @@ function openSingleView(id) {
   document.body.appendChild(overlay);
 
   overlay.querySelector("img").addEventListener("click", () =>
-    handleImageDownload(src, id)
+    handleImageDownload(target.src, id)
   );
 
-  overlay
-    .querySelector(".close-btn")
-    .addEventListener("click", closeSingleView);
+  overlay.querySelector(".close-btn").addEventListener("click", closeSingleView);
 
   document.addEventListener("keydown", escHandler, { once: true });
 }
+
 
 // ==============================
 // Download handler
@@ -166,6 +180,7 @@ function handleImageDownload(src, id) {
   }
 }
 
+
 // ==============================
 // Close single
 // ==============================
@@ -183,6 +198,7 @@ function escHandler(e) {
   if (e.key === "Escape") closeSingleView();
 }
 
+
 // ==============================
 // ZIP download
 // ==============================
@@ -192,12 +208,10 @@ if (zipBtn) {
     const zip = new JSZip();
 
     const activeFilter =
-      document.querySelector(".filters button.active")?.dataset.filter ||
-      "all";
+      document.querySelector(".filters button.active")?.dataset.filter || "all";
 
     const targets = imagesData.filter(
-      img =>
-        activeFilter === "all" || img.category === activeFilter
+      img => activeFilter === "all" || img.category === activeFilter
     );
 
     for (const img of targets) {
@@ -214,6 +228,7 @@ if (zipBtn) {
   });
 }
 
+
 // ==============================
 // SPA sync
 // ==============================
@@ -225,9 +240,7 @@ function syncState() {
     history.replaceState({}, "", location.pathname);
   }
 
-  images.forEach(img => {
-    img.style.display = "block";
-  });
+  images.forEach(img => (img.style.display = "block"));
 
   const path = location.pathname.replace("/", "");
   applyFilter(path || "all");
@@ -235,3 +248,6 @@ function syncState() {
 
 syncState();
 window.addEventListener("popstate", syncState);
+
+document.getElementById("canonical").href =
+  `https://quiet-ai.gushikendesign.com/image.html?img=${found.id}`;

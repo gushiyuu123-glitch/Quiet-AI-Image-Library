@@ -1,6 +1,6 @@
-/* ==============================
-   Reset
-============================== */
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
 *,
 *::before,
 *::after {
@@ -19,56 +19,58 @@ img {
   display: block;
 }
 
-/* ==============================
-   Base
-============================== */
+/* =========================================================
+   BASE
+========================================================= */
 body {
   background: #0b0b0b;
   color: #eaeaea;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  line-height: 1.6;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  padding-bottom: 180px;
 }
 
-/* ==============================
-   Hero
-============================== */
+/* =========================================================
+   HERO (Top)
+========================================================= */
 .hero {
-  min-height: 60vh;
+  min-height: 56vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 6vw;
+  padding: 8vh 6vw 4vh;
   max-width: 880px;
 }
 
 .hero h1 {
-  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  font-size: clamp(2.3rem, 4.5vw, 3.6rem);
   font-weight: 500;
-  margin: 0 0 12px;
-  letter-spacing: 0.01em;
+  margin: 0 0 14px;
+  letter-spacing: 0.015em;
 }
 
-.lead {
-  font-size: 0.95rem;
+.hero .lead {
+  font-size: 1rem;
   opacity: 0.75;
 }
 
-.hint {
+.hero .hint {
   font-size: 12px;
-  opacity: 0.5;
-  margin-top: 16px;
+  opacity: 0.55;
+  margin-top: 18px;
 }
 
-/* ==============================
-   Filters
-============================== */
+/* =========================================================
+   FILTERS
+========================================================= */
 .filters {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
   margin: 24px 6vw 48px;
+  align-items: center;
 }
 
 .filters button {
@@ -77,17 +79,21 @@ body {
   color: inherit;
   font-size: 12px;
   padding: 0;
-  opacity: 0.45;
+  opacity: 0.42;
   cursor: pointer;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.28s ease, transform 0.25s ease;
 }
 
-.filters button.active,
 .filters button:hover {
-  opacity: 1;
+  opacity: 0.9;
 }
 
-/* ZIPボタンは控えめに区別 */
+.filters button.active {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+/* ZIP */
 #zip-download {
   margin-left: auto;
   opacity: 0.35;
@@ -97,30 +103,48 @@ body {
   opacity: 0.7;
 }
 
-/* ==============================
-   Grid
-============================== */
+/* =========================================================
+   GRID
+========================================================= */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 28px;
-  padding: 0 6vw 160px;
+  gap: 32px;
+  padding: 0 6vw;
+  max-width: 1600px;
+  margin: 0 auto 120px;
+  min-height: 40vh; /* CLS対策 */
 }
 
 .grid img {
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: transform 0.25s ease, opacity 0.25s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.4s ease;
+  background: #111;
 }
 
 .grid img:hover {
-  transform: translateY(-2px);
-  opacity: 0.9;
+  transform: translateY(-3px);
+  opacity: 0.92;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
 }
 
-/* ==============================
-   Single View
-============================== */
+/* =========================================================
+   SINGLE VIEW OVERLAY
+========================================================= */
+.single-overlay {
+  position: fixed;
+  inset: 0;
+  background: #0b0b0b;
+  z-index: 9999;
+  animation: fadeIn 0.35s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 .single {
   min-height: 100vh;
   display: flex;
@@ -133,99 +157,33 @@ body {
 
 .single img {
   max-width: 100%;
-  max-height: 70vh;
-  border-radius: 6px;
+  max-height: 74vh;
+  border-radius: 8px;
+  margin-bottom: 16px;
   cursor: pointer;
 }
 
-.single .hint {
-  margin-top: 16px;
-}
-.single-overlay {
-  position: fixed;
-  inset: 0;
-  background: #0b0b0b;
-  z-index: 9999;
-}
-
-/* ==============================
-   Close Button
-============================== */
+/* Close */
 .close-btn {
   position: absolute;
-  top: calc(50% - 35vh);
-  right: calc(50% - 35vw);
-  transform: translate(16px, -16px);
-
-  background: none;
+  top: 26px;
+  right: 26px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(8px);
   border: none;
-  color: #eaeaea;
-  font-size: 16px;
+  color: #e5e5e5;
+  padding: 8px 11px;
+  font-size: 18px;
+  border-radius: 8px;
   cursor: pointer;
-  opacity: 0.5;
+  transition: all 0.25s ease;
 }
 
 .close-btn:hover {
-  opacity: 0.9;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
 }
 
-
-
-/* ==============================
-   License
-============================== */
-.license {
-  max-width: 640px;
-  margin: 0 6vw 120px;
-  font-size: 12px;
-  line-height: 1.6;
-  opacity: 0.55;
-}
-
-/* ==============================
-   Footer
-============================== */
-footer {
-  margin: 120px 6vw 60px;
-  font-size: 12px;
-  line-height: 1.6;
-  opacity: 0.65;
-}
-
-footer a {
-  color: inherit;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-}
-
-footer a:hover {
-  opacity: 0.9;
-}
-
-footer .credits {
-  margin-top: 8px;
-}
-
-/* ==============================
-   Responsive
-============================== */
-@media (max-width: 640px) {
-  .hero {
-    min-height: 50vh;
-  }
-
-  .grid {
-    gap: 20px;
-  }
-
-  .close-btn {
-    top: 16px;
-    right: 16px;
-  }
-}
-.grid img {
-  display: block;
-}
 /* ==============================
    Screen Reader Only (SEO text)
 ============================== */
@@ -261,65 +219,88 @@ footer .credits {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
-/* ================================
-   CTA for Templates (Quiet AI)
-================================ */
+
+/* =========================================================
+   LICENSE
+========================================================= */
+.license {
+  max-width: 640px;
+  margin: 0 auto 100px;
+  padding: 0 6vw;
+  font-size: 12px;
+  line-height: 1.7;
+  opacity: 0.55;
+}
+
+/* =========================================================
+   CTA (Minimal Templates)
+========================================================= */
 .cta-templates {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 4rem;   /* ギャラリーとの距離 */
-  margin-bottom: 2.5rem; /* フッターとの距離 */
+  margin: 3rem 0 2.5rem;
+  animation: fadeUp 1.3s ease;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .cta-button {
   display: inline-block;
   padding: 14px 36px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 999px;
-  color: rgba(255, 255, 255, 0.88);
+  color: rgba(255, 255, 255, 0.86);
   font-size: 0.9rem;
   letter-spacing: 0.08em;
   text-decoration: none;
-  transition: all 0.4s ease;
-  backdrop-filter: blur(4px);
-  background: rgba(255, 255, 255, 0.06);
+  transition: all 0.35s ease;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(5px);
 }
 
-/* Hover */
 .cta-button:hover {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.26);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.28);
   color: white;
   transform: translateY(-2px);
 }
 
-/* Fade-in animation */
-@keyframes fadeInSoft {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* =========================================================
+   FOOTER
+========================================================= */
+footer {
+  margin: 100px 6vw 60px;
+  font-size: 12px;
+  line-height: 1.7;
+  opacity: 0.65;
+  text-align: center;
 }
 
-.cta-templates {
-  animation: fadeInSoft 1.2s ease-out;
+footer a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-/* ================================
-   Responsive
-================================ */
+/* =========================================================
+   RESPONSIVE
+========================================================= */
 @media (max-width: 768px) {
-  .cta-templates {
-    margin-top: 3rem;
-    margin-bottom: 2rem;
+  .hero {
+    min-height: 48vh;
+  }
+  .grid {
+    gap: 20px;
   }
   .cta-button {
     padding: 12px 28px;
     font-size: 0.85rem;
+  }
+  .single img {
+    max-height: 65vh;
   }
 }
