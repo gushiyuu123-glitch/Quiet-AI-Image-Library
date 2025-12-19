@@ -26,6 +26,12 @@ function generateAltText(category, filename) {
       "clean creative workspace with soft daylight and balanced negative space, excellent for productivity or tech-focused design concepts",
     nature:
       "soft natural landscape with serene tones and subtle organic patterns, ideal for calm-themed creative and branding uses",
+    glass:
+      "minimal glass surfaces with soft reflections and calm lighting, perfect for high-end web design, UI backgrounds, and modern branding",
+    fog:
+      "soft atmospheric fog and minimal silhouettes with calm gradients, ideal for aesthetic landing pages and poetic visual branding",
+    mono:
+      "minimal monochrome visual with elegant contrast and quiet shadows, perfect for modern editorial, branding, and high-end design",
   };
 
   const phrase =

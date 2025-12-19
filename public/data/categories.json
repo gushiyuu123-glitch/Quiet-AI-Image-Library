@@ -6,5 +6,8 @@
   { "id": "texture", "label": "Texture" },
   { "id": "people", "label": "People" },
   { "id": "workspace", "label": "Workspace" },
-  { "id": "nature", "label": "Nature" }
+  { "id": "nature", "label": "Nature" },
+  { "id": "glass", "label": "Glass" },
+  { "id": "fog", "label": "Fog" },
+  { "id": "mono", "label": "Monochrome" }
 ]

@@ -106,6 +106,80 @@
       "loading": "lazy"
     }
   ],
+  "fog": [
+    {
+      "id": "fog-001",
+      "category": "fog",
+      "src": "/images/fog/fog-001.png",
+      "alt": "fog 001: soft atmospheric fog and minimal silhouettes with calm gradients, ideal for aesthetic landing pages and poetic visual branding.",
+      "loading": "lazy"
+    },
+    {
+      "id": "fog-002",
+      "category": "fog",
+      "src": "/images/fog/fog-002.png",
+      "alt": "fog 002: soft atmospheric fog and minimal silhouettes with calm gradients, ideal for aesthetic landing pages and poetic visual branding.",
+      "loading": "lazy"
+    },
+    {
+      "id": "fog-003",
+      "category": "fog",
+      "src": "/images/fog/fog-003.png",
+      "alt": "fog 003: soft atmospheric fog and minimal silhouettes with calm gradients, ideal for aesthetic landing pages and poetic visual branding.",
+      "loading": "lazy"
+    },
+    {
+      "id": "fog-004",
+      "category": "fog",
+      "src": "/images/fog/fog-004.png",
+      "alt": "fog 004: soft atmospheric fog and minimal silhouettes with calm gradients, ideal for aesthetic landing pages and poetic visual branding.",
+      "loading": "lazy"
+    },
+    {
+      "id": "fog-005",
+      "category": "fog",
+      "src": "/images/fog/fog-005.png",
+      "alt": "fog 005: soft atmospheric fog and minimal silhouettes with calm gradients, ideal for aesthetic landing pages and poetic visual branding.",
+      "loading": "lazy"
+    }
+  ],
+  "glass": [
+    {
+      "id": "glass-001",
+      "category": "glass",
+      "src": "/images/glass/glass-001.png",
+      "alt": "glass 001: minimal glass surfaces with soft reflections and calm lighting, perfect for high-end web design, UI backgrounds, and modern branding.",
+      "loading": "lazy"
+    },
+    {
+      "id": "glass-002",
+      "category": "glass",
+      "src": "/images/glass/glass-002.png",
+      "alt": "glass 002: minimal glass surfaces with soft reflections and calm lighting, perfect for high-end web design, UI backgrounds, and modern branding.",
+      "loading": "lazy"
+    },
+    {
+      "id": "glass-003",
+      "category": "glass",
+      "src": "/images/glass/glass-003.png",
+      "alt": "glass 003: minimal glass surfaces with soft reflections and calm lighting, perfect for high-end web design, UI backgrounds, and modern branding.",
+      "loading": "lazy"
+    },
+    {
+      "id": "glass-004",
+      "category": "glass",
+      "src": "/images/glass/glass-004.png",
+      "alt": "glass 004: minimal glass surfaces with soft reflections and calm lighting, perfect for high-end web design, UI backgrounds, and modern branding.",
+      "loading": "lazy"
+    },
+    {
+      "id": "glass-005",
+      "category": "glass",
+      "src": "/images/glass/glass-005.png",
+      "alt": "glass 005: minimal glass surfaces with soft reflections and calm lighting, perfect for high-end web design, UI backgrounds, and modern branding.",
+      "loading": "lazy"
+    }
+  ],
   "light": [
     {
       "id": "light-001",
@@ -175,6 +249,43 @@
       "category": "light",
       "src": "/images/light/light-010.png",
       "alt": "light 010: calm natural lighting atmosphere with soft gradients and delicate shadow expressions, ideal for minimal UI backgrounds and artistic layouts.",
+      "loading": "lazy"
+    }
+  ],
+  "mono": [
+    {
+      "id": "mono-001",
+      "category": "mono",
+      "src": "/images/mono/mono-001.png",
+      "alt": "mono 001: minimal monochrome visual with elegant contrast and quiet shadows, perfect for modern editorial, branding, and high-end design.",
+      "loading": "lazy"
+    },
+    {
+      "id": "mono-002",
+      "category": "mono",
+      "src": "/images/mono/mono-002.png",
+      "alt": "mono 002: minimal monochrome visual with elegant contrast and quiet shadows, perfect for modern editorial, branding, and high-end design.",
+      "loading": "lazy"
+    },
+    {
+      "id": "mono-003",
+      "category": "mono",
+      "src": "/images/mono/mono-003.png",
+      "alt": "mono 003: minimal monochrome visual with elegant contrast and quiet shadows, perfect for modern editorial, branding, and high-end design.",
+      "loading": "lazy"
+    },
+    {
+      "id": "mono-004",
+      "category": "mono",
+      "src": "/images/mono/mono-004.png",
+      "alt": "mono 004: minimal monochrome visual with elegant contrast and quiet shadows, perfect for modern editorial, branding, and high-end design.",
+      "loading": "lazy"
+    },
+    {
+      "id": "mono-005",
+      "category": "mono",
+      "src": "/images/mono/mono-005.png",
+      "alt": "mono 005: minimal monochrome visual with elegant contrast and quiet shadows, perfect for modern editorial, branding, and high-end design.",
       "loading": "lazy"
     }
   ],

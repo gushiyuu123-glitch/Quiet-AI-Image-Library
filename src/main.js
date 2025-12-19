@@ -195,6 +195,33 @@ const CATEGORY_SEO = {
       ideal for minimal and wellness-related web design.
     </p>
   `,
+    glass: `
+    <h2>Glass & Refraction AI Images</h2>
+    <p>
+      Minimal glass materials with soft reflections, clean refraction,
+      and modern architectural lighting. Perfect for luxury branding,
+      hero sections, and high-end web design aesthetics.
+    </p>
+  `,
+
+  fog: `
+    <h2>Fog & Atmospheric Minimal Scenes</h2>
+    <p>
+      Soft fog, diffused light, and serene atmospheric depth.
+      Ideal for calm landing pages, emotional storytelling,
+      and modern minimal branding visuals.
+    </p>
+  `,
+
+  mono: `
+    <h2>Monochrome Minimal AI Images</h2>
+    <p>
+      Black & white compositions focused on light, shadow,
+      and geometric purity — perfect for premium web aesthetics,
+      editorial layouts, and minimal UI design.
+    </p>
+  `,
+
   all: `
     <h2>Free AI Images for Web Design</h2>
     <p>
