@@ -141,6 +141,48 @@
       "src": "/images/fog/fog-005.png",
       "alt": "fog 005: soft atmospheric fog and minimal silhouettes with calm gradients, ideal for aesthetic landing pages and poetic visual branding.",
       "loading": "lazy"
+    },
+    {
+      "id": "fog-006",
+      "category": "fog",
+      "src": "/images/fog/fog-006.png",
+      "alt": "fog 006: soft atmospheric fog and minimal silhouettes with calm gradients, ideal for aesthetic landing pages and poetic visual branding.",
+      "loading": "lazy"
+    },
+    {
+      "id": "fog-007",
+      "category": "fog",
+      "src": "/images/fog/fog-007.png",
+      "alt": "fog 007: soft atmospheric fog and minimal silhouettes with calm gradients, ideal for aesthetic landing pages and poetic visual branding.",
+      "loading": "lazy"
+    },
+    {
+      "id": "fog-008",
+      "category": "fog",
+      "src": "/images/fog/fog-008.png",
+      "alt": "fog 008: soft atmospheric fog and minimal silhouettes with calm gradients, ideal for aesthetic landing pages and poetic visual branding.",
+      "loading": "lazy"
+    },
+    {
+      "id": "fog-009",
+      "category": "fog",
+      "src": "/images/fog/fog-009.png",
+      "alt": "fog 009: soft atmospheric fog and minimal silhouettes with calm gradients, ideal for aesthetic landing pages and poetic visual branding.",
+      "loading": "lazy"
+    },
+    {
+      "id": "fog-010",
+      "category": "fog",
+      "src": "/images/fog/fog-010.png",
+      "alt": "fog 010: soft atmospheric fog and minimal silhouettes with calm gradients, ideal for aesthetic landing pages and poetic visual branding.",
+      "loading": "lazy"
+    },
+    {
+      "id": "fog-011",
+      "category": "fog",
+      "src": "/images/fog/fog-011.png",
+      "alt": "fog 011: soft atmospheric fog and minimal silhouettes with calm gradients, ideal for aesthetic landing pages and poetic visual branding.",
+      "loading": "lazy"
     }
   ],
   "glass": [
@@ -177,6 +219,55 @@
       "category": "glass",
       "src": "/images/glass/glass-005.png",
       "alt": "glass 005: minimal glass surfaces with soft reflections and calm lighting, perfect for high-end web design, UI backgrounds, and modern branding.",
+      "loading": "lazy"
+    },
+    {
+      "id": "glass-006",
+      "category": "glass",
+      "src": "/images/glass/glass-006.png",
+      "alt": "glass 006: minimal glass surfaces with soft reflections and calm lighting, perfect for high-end web design, UI backgrounds, and modern branding.",
+      "loading": "lazy"
+    },
+    {
+      "id": "glass-007",
+      "category": "glass",
+      "src": "/images/glass/glass-007.png",
+      "alt": "glass 007: minimal glass surfaces with soft reflections and calm lighting, perfect for high-end web design, UI backgrounds, and modern branding.",
+      "loading": "lazy"
+    },
+    {
+      "id": "glass-008",
+      "category": "glass",
+      "src": "/images/glass/glass-008.png",
+      "alt": "glass 008: minimal glass surfaces with soft reflections and calm lighting, perfect for high-end web design, UI backgrounds, and modern branding.",
+      "loading": "lazy"
+    },
+    {
+      "id": "glass-009",
+      "category": "glass",
+      "src": "/images/glass/glass-009.png",
+      "alt": "glass 009: minimal glass surfaces with soft reflections and calm lighting, perfect for high-end web design, UI backgrounds, and modern branding.",
+      "loading": "lazy"
+    },
+    {
+      "id": "glass-010",
+      "category": "glass",
+      "src": "/images/glass/glass-010.png",
+      "alt": "glass 010: minimal glass surfaces with soft reflections and calm lighting, perfect for high-end web design, UI backgrounds, and modern branding.",
+      "loading": "lazy"
+    },
+    {
+      "id": "glass-011",
+      "category": "glass",
+      "src": "/images/glass/glass-011.png",
+      "alt": "glass 011: minimal glass surfaces with soft reflections and calm lighting, perfect for high-end web design, UI backgrounds, and modern branding.",
+      "loading": "lazy"
+    },
+    {
+      "id": "glass-012",
+      "category": "glass",
+      "src": "/images/glass/glass-012.png",
+      "alt": "glass 012: minimal glass surfaces with soft reflections and calm lighting, perfect for high-end web design, UI backgrounds, and modern branding.",
       "loading": "lazy"
     }
   ],
@@ -253,6 +344,48 @@
     }
   ],
   "mono": [
+    {
+      "id": "mono-006",
+      "category": "mono",
+      "src": "/images/mono/mono-006.png",
+      "alt": "mono 006: minimal monochrome visual with elegant contrast and quiet shadows, perfect for modern editorial, branding, and high-end design.",
+      "loading": "lazy"
+    },
+    {
+      "id": "mono-007",
+      "category": "mono",
+      "src": "/images/mono/mono-007.png",
+      "alt": "mono 007: minimal monochrome visual with elegant contrast and quiet shadows, perfect for modern editorial, branding, and high-end design.",
+      "loading": "lazy"
+    },
+    {
+      "id": "mono-008",
+      "category": "mono",
+      "src": "/images/mono/mono-008.png",
+      "alt": "mono 008: minimal monochrome visual with elegant contrast and quiet shadows, perfect for modern editorial, branding, and high-end design.",
+      "loading": "lazy"
+    },
+    {
+      "id": "mono-009",
+      "category": "mono",
+      "src": "/images/mono/mono-009.png",
+      "alt": "mono 009: minimal monochrome visual with elegant contrast and quiet shadows, perfect for modern editorial, branding, and high-end design.",
+      "loading": "lazy"
+    },
+    {
+      "id": "mono-010",
+      "category": "mono",
+      "src": "/images/mono/mono-010.png",
+      "alt": "mono 010: minimal monochrome visual with elegant contrast and quiet shadows, perfect for modern editorial, branding, and high-end design.",
+      "loading": "lazy"
+    },
+    {
+      "id": "mono-011",
+      "category": "mono",
+      "src": "/images/mono/mono-011.png",
+      "alt": "mono 011: minimal monochrome visual with elegant contrast and quiet shadows, perfect for modern editorial, branding, and high-end design.",
+      "loading": "lazy"
+    },
     {
       "id": "mono-001",
       "category": "mono",
