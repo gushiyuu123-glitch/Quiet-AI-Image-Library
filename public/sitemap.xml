@@ -350,6 +350,36 @@
   </url>
 
   <url>
+    <loc>https://quiet-ai.gushikendesign.com/image/mono-001</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://quiet-ai.gushikendesign.com/image/mono-002</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://quiet-ai.gushikendesign.com/image/mono-003</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://quiet-ai.gushikendesign.com/image/mono-004</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://quiet-ai.gushikendesign.com/image/mono-005</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://quiet-ai.gushikendesign.com/image/mono-006</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -386,31 +416,31 @@
   </url>
 
   <url>
-    <loc>https://quiet-ai.gushikendesign.com/image/mono-001</loc>
+    <loc>https://quiet-ai.gushikendesign.com/image/nature-011</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://quiet-ai.gushikendesign.com/image/mono-002</loc>
+    <loc>https://quiet-ai.gushikendesign.com/image/nature-012</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://quiet-ai.gushikendesign.com/image/mono-003</loc>
+    <loc>https://quiet-ai.gushikendesign.com/image/nature-013</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://quiet-ai.gushikendesign.com/image/mono-004</loc>
+    <loc>https://quiet-ai.gushikendesign.com/image/nature-014</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://quiet-ai.gushikendesign.com/image/mono-005</loc>
+    <loc>https://quiet-ai.gushikendesign.com/image/nature-015</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -548,6 +578,48 @@
   </url>
 
   <url>
+    <loc>https://quiet-ai.gushikendesign.com/image/texture-011</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://quiet-ai.gushikendesign.com/image/texture-012</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://quiet-ai.gushikendesign.com/image/texture-013</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://quiet-ai.gushikendesign.com/image/texture-014</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://quiet-ai.gushikendesign.com/image/texture-015</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://quiet-ai.gushikendesign.com/image/texture-016</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://quiet-ai.gushikendesign.com/image/texture-017</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://quiet-ai.gushikendesign.com/image/texture-001</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -603,6 +675,60 @@
 
   <url>
     <loc>https://quiet-ai.gushikendesign.com/image/texture-010</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://quiet-ai.gushikendesign.com/image/workspace-011</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://quiet-ai.gushikendesign.com/image/workspace-012</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://quiet-ai.gushikendesign.com/image/workspace-013</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://quiet-ai.gushikendesign.com/image/workspace-014</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://quiet-ai.gushikendesign.com/image/workspace-015</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://quiet-ai.gushikendesign.com/image/workspace-016</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://quiet-ai.gushikendesign.com/image/workspace-017</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://quiet-ai.gushikendesign.com/image/workspace-018</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://quiet-ai.gushikendesign.com/image/workspace-019</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

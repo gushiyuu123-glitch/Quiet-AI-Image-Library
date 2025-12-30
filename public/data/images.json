@@ -345,6 +345,41 @@
   ],
   "mono": [
     {
+      "id": "mono-001",
+      "category": "mono",
+      "src": "/images/mono/mono-001.png",
+      "alt": "mono 001: minimal monochrome visual with elegant contrast and quiet shadows, perfect for modern editorial, branding, and high-end design.",
+      "loading": "lazy"
+    },
+    {
+      "id": "mono-002",
+      "category": "mono",
+      "src": "/images/mono/mono-002.png",
+      "alt": "mono 002: minimal monochrome visual with elegant contrast and quiet shadows, perfect for modern editorial, branding, and high-end design.",
+      "loading": "lazy"
+    },
+    {
+      "id": "mono-003",
+      "category": "mono",
+      "src": "/images/mono/mono-003.png",
+      "alt": "mono 003: minimal monochrome visual with elegant contrast and quiet shadows, perfect for modern editorial, branding, and high-end design.",
+      "loading": "lazy"
+    },
+    {
+      "id": "mono-004",
+      "category": "mono",
+      "src": "/images/mono/mono-004.png",
+      "alt": "mono 004: minimal monochrome visual with elegant contrast and quiet shadows, perfect for modern editorial, branding, and high-end design.",
+      "loading": "lazy"
+    },
+    {
+      "id": "mono-005",
+      "category": "mono",
+      "src": "/images/mono/mono-005.png",
+      "alt": "mono 005: minimal monochrome visual with elegant contrast and quiet shadows, perfect for modern editorial, branding, and high-end design.",
+      "loading": "lazy"
+    },
+    {
       "id": "mono-006",
       "category": "mono",
       "src": "/images/mono/mono-006.png",
@@ -385,44 +420,44 @@
       "src": "/images/mono/mono-011.png",
       "alt": "mono 011: minimal monochrome visual with elegant contrast and quiet shadows, perfect for modern editorial, branding, and high-end design.",
       "loading": "lazy"
-    },
-    {
-      "id": "mono-001",
-      "category": "mono",
-      "src": "/images/mono/mono-001.png",
-      "alt": "mono 001: minimal monochrome visual with elegant contrast and quiet shadows, perfect for modern editorial, branding, and high-end design.",
-      "loading": "lazy"
-    },
-    {
-      "id": "mono-002",
-      "category": "mono",
-      "src": "/images/mono/mono-002.png",
-      "alt": "mono 002: minimal monochrome visual with elegant contrast and quiet shadows, perfect for modern editorial, branding, and high-end design.",
-      "loading": "lazy"
-    },
-    {
-      "id": "mono-003",
-      "category": "mono",
-      "src": "/images/mono/mono-003.png",
-      "alt": "mono 003: minimal monochrome visual with elegant contrast and quiet shadows, perfect for modern editorial, branding, and high-end design.",
-      "loading": "lazy"
-    },
-    {
-      "id": "mono-004",
-      "category": "mono",
-      "src": "/images/mono/mono-004.png",
-      "alt": "mono 004: minimal monochrome visual with elegant contrast and quiet shadows, perfect for modern editorial, branding, and high-end design.",
-      "loading": "lazy"
-    },
-    {
-      "id": "mono-005",
-      "category": "mono",
-      "src": "/images/mono/mono-005.png",
-      "alt": "mono 005: minimal monochrome visual with elegant contrast and quiet shadows, perfect for modern editorial, branding, and high-end design.",
-      "loading": "lazy"
     }
   ],
   "nature": [
+    {
+      "id": "nature-011",
+      "category": "nature",
+      "src": "/images/nature/nature-011.png",
+      "alt": "nature 011: soft natural landscape with serene tones and subtle organic patterns, ideal for calm-themed creative and branding uses.",
+      "loading": "lazy"
+    },
+    {
+      "id": "nature-012",
+      "category": "nature",
+      "src": "/images/nature/nature-012.png",
+      "alt": "nature 012: soft natural landscape with serene tones and subtle organic patterns, ideal for calm-themed creative and branding uses.",
+      "loading": "lazy"
+    },
+    {
+      "id": "nature-013",
+      "category": "nature",
+      "src": "/images/nature/nature-013.png",
+      "alt": "nature 013: soft natural landscape with serene tones and subtle organic patterns, ideal for calm-themed creative and branding uses.",
+      "loading": "lazy"
+    },
+    {
+      "id": "nature-014",
+      "category": "nature",
+      "src": "/images/nature/nature-014.png",
+      "alt": "nature 014: soft natural landscape with serene tones and subtle organic patterns, ideal for calm-themed creative and branding uses.",
+      "loading": "lazy"
+    },
+    {
+      "id": "nature-015",
+      "category": "nature",
+      "src": "/images/nature/nature-015.png",
+      "alt": "nature 015: soft natural landscape with serene tones and subtle organic patterns, ideal for calm-themed creative and branding uses.",
+      "loading": "lazy"
+    },
     {
       "id": "nature-001",
       "category": "nature",
@@ -582,6 +617,55 @@
   ],
   "texture": [
     {
+      "id": "texture-011",
+      "category": "texture",
+      "src": "/images/texture/texture-011.png",
+      "alt": "texture 011: subtle material texture with elegant neutral tones, perfect for refined website backgrounds and premium design projects.",
+      "loading": "lazy"
+    },
+    {
+      "id": "texture-012",
+      "category": "texture",
+      "src": "/images/texture/texture-012.png",
+      "alt": "texture 012: subtle material texture with elegant neutral tones, perfect for refined website backgrounds and premium design projects.",
+      "loading": "lazy"
+    },
+    {
+      "id": "texture-013",
+      "category": "texture",
+      "src": "/images/texture/texture-013.png",
+      "alt": "texture 013: subtle material texture with elegant neutral tones, perfect for refined website backgrounds and premium design projects.",
+      "loading": "lazy"
+    },
+    {
+      "id": "texture-014",
+      "category": "texture",
+      "src": "/images/texture/texture-014.png",
+      "alt": "texture 014: subtle material texture with elegant neutral tones, perfect for refined website backgrounds and premium design projects.",
+      "loading": "lazy"
+    },
+    {
+      "id": "texture-015",
+      "category": "texture",
+      "src": "/images/texture/texture-015.png",
+      "alt": "texture 015: subtle material texture with elegant neutral tones, perfect for refined website backgrounds and premium design projects.",
+      "loading": "lazy"
+    },
+    {
+      "id": "texture-016",
+      "category": "texture",
+      "src": "/images/texture/texture-016.png",
+      "alt": "texture 016: subtle material texture with elegant neutral tones, perfect for refined website backgrounds and premium design projects.",
+      "loading": "lazy"
+    },
+    {
+      "id": "texture-017",
+      "category": "texture",
+      "src": "/images/texture/texture-017.png",
+      "alt": "texture 017: subtle material texture with elegant neutral tones, perfect for refined website backgrounds and premium design projects.",
+      "loading": "lazy"
+    },
+    {
       "id": "texture-001",
       "category": "texture",
       "src": "/images/texture/texture-001.png",
@@ -653,6 +737,69 @@
     }
   ],
   "workspace": [
+    {
+      "id": "workspace-011",
+      "category": "workspace",
+      "src": "/images/workspace/workspace-011.png",
+      "alt": "workspace 011: clean creative workspace with soft daylight and balanced negative space, excellent for productivity or tech-focused design concepts.",
+      "loading": "lazy"
+    },
+    {
+      "id": "workspace-012",
+      "category": "workspace",
+      "src": "/images/workspace/workspace-012.png",
+      "alt": "workspace 012: clean creative workspace with soft daylight and balanced negative space, excellent for productivity or tech-focused design concepts.",
+      "loading": "lazy"
+    },
+    {
+      "id": "workspace-013",
+      "category": "workspace",
+      "src": "/images/workspace/workspace-013.png",
+      "alt": "workspace 013: clean creative workspace with soft daylight and balanced negative space, excellent for productivity or tech-focused design concepts.",
+      "loading": "lazy"
+    },
+    {
+      "id": "workspace-014",
+      "category": "workspace",
+      "src": "/images/workspace/workspace-014.png",
+      "alt": "workspace 014: clean creative workspace with soft daylight and balanced negative space, excellent for productivity or tech-focused design concepts.",
+      "loading": "lazy"
+    },
+    {
+      "id": "workspace-015",
+      "category": "workspace",
+      "src": "/images/workspace/workspace-015.png",
+      "alt": "workspace 015: clean creative workspace with soft daylight and balanced negative space, excellent for productivity or tech-focused design concepts.",
+      "loading": "lazy"
+    },
+    {
+      "id": "workspace-016",
+      "category": "workspace",
+      "src": "/images/workspace/workspace-016.png",
+      "alt": "workspace 016: clean creative workspace with soft daylight and balanced negative space, excellent for productivity or tech-focused design concepts.",
+      "loading": "lazy"
+    },
+    {
+      "id": "workspace-017",
+      "category": "workspace",
+      "src": "/images/workspace/workspace-017.png",
+      "alt": "workspace 017: clean creative workspace with soft daylight and balanced negative space, excellent for productivity or tech-focused design concepts.",
+      "loading": "lazy"
+    },
+    {
+      "id": "workspace-018",
+      "category": "workspace",
+      "src": "/images/workspace/workspace-018.png",
+      "alt": "workspace 018: clean creative workspace with soft daylight and balanced negative space, excellent for productivity or tech-focused design concepts.",
+      "loading": "lazy"
+    },
+    {
+      "id": "workspace-019",
+      "category": "workspace",
+      "src": "/images/workspace/workspace-019.png",
+      "alt": "workspace 019: clean creative workspace with soft daylight and balanced negative space, excellent for productivity or tech-focused design concepts.",
+      "loading": "lazy"
+    },
     {
       "id": "workspace-001",
       "category": "workspace",
